@@ -1,0 +1,7 @@
+Mirror in progress since Mon, 31 Aug 2026 13:36:40 .. please wait!
+httrack https://wearestokt.com/ -O ./wearestokt-mirror -* +*.wearestokt.com/* +*.framerusercontent.com/* +*.framer.com/* +*.googleapis.com/* +*.gstatic.com/* %v 
+To pause the engine: create an empty file named 'hts-stop.lock'
+PID=53231
+UID=504
+GID=504
+START=1788165400

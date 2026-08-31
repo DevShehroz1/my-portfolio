@@ -1,0 +1,3036 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <defs>
+    <symbol id="framer" viewBox="0 0 10 15">
+      <path d="M10 0v5H5L0 0ZM0 5h5l5 5H5v5l-5-5Z" fill="currentColor"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="heart" viewBox="0 0 20 20">
+      <path
+        d="M 6 2.5 C 8.124 2.5 9.612 3.972 10 5.951 C 10.388 3.972 11.876 2.5 14 2.5 C 16.486 2.5 18.5 4.515 18.5 7 C 18.5 14.485 10 18 10 18 L 10 18 L 10 18 C 10 18 1.5 14.485 1.5 7 C 1.5 4.515 3.515 2.5 6 2.5 Z"
+        fill="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="
+          fill-opacity: var(--icon-fill-opacity, 0.15);
+          stroke: var(--icon-stroke, currentColor);
+        "
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="comment" viewBox="0 0 20 20">
+      <path
+        d="M 10 2 C 14.418 2 18 5.582 18 10 C 18 14.418 14.418 18 10 18 L 4 18 C 2.895 18 2 17.105 2 16 L 2 10 C 2 5.582 5.582 2 10 2 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="zap" viewBox="0 0 20 20">
+      <path
+        d="M 9.816 1.282 C 9.871 1.198 10 1.237 10 1.336 L 10 7.5 L 16.577 7.5 C 16.974 7.5 17.213 7.941 16.996 8.273 L 10.184 18.718 C 10.129 18.802 10 18.763 10 18.664 L 10 12.5 L 3.423 12.5 C 3.026 12.5 2.787 12.059 3.004 11.727 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="box" viewBox="0 0 20 20">
+      <path
+        d="M 9.446 1.844 C 9.785 1.633 10.215 1.633 10.554 1.844 L 16.754 5.692 C 17.062 5.884 17.25 6.221 17.25 6.584 L 17.25 13.409 C 17.25 13.776 17.058 14.116 16.745 14.307 L 10.545 18.069 C 10.21 18.273 9.79 18.273 9.455 18.069 L 3.255 14.307 C 2.942 14.116 2.75 13.776 2.75 13.409 L 2.75 6.584 C 2.75 6.221 2.938 5.884 3.246 5.692 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 3 6 L 10 10 L 16.5 6"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+      <path
+        d="M 10 10 L 10 17.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="globe" viewBox="0 0 20 20">
+      <path
+        d="M 10 3 C 13.866 3 17 6.134 17 10 C 17 13.866 13.866 17 10 17 C 6.134 17 3 13.866 3 10 C 3 6.134 6.134 3 10 3 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+      ></path>
+      <path
+        d="M 10.001 1.5 C 14.696 1.5 18.501 5.306 18.501 10.001 C 18.501 14.696 14.695 18.501 10 18.501 C 5.305 18.501 1.5 14.695 1.5 10 C 1.5 5.305 5.306 1.5 10.001 1.5 Z M 3.501 10 C 3.501 12.715 5.189 15.145 7.733 16.093 C 6.979 14.626 6.501 12.441 6.501 10 C 6.501 7.559 6.979 5.374 7.733 3.907 C 5.189 4.855 3.501 7.285 3.501 10 Z M 16.501 10 C 16.501 7.285 14.813 4.855 12.269 3.907 C 13.023 5.374 13.501 7.559 13.501 10 C 13.501 12.441 13.023 14.626 12.269 16.093 C 14.813 15.145 16.501 12.715 16.501 10 Z M 8.001 10 C 8.001 13.59 8.896 16.5 10.001 16.5 C 11.106 16.5 12.001 13.59 12.001 10 C 12.001 6.41 11.106 3.5 10.001 3.5 C 8.896 3.5 8.001 6.41 8.001 10 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 3.5 9.5 L 3.5 9.5 C 7.777 10.487 12.223 10.487 16.5 9.5 L 16.5 9.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="play" viewBox="0 0 12 12">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        d="M2.25 2.049A1 1 0 0 1 3.778 1.2l6.356 3.951a1 1 0 0 1 0 1.698L3.778 10.8a1 1 0 0 1-1.528-.849Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="cross" viewBox="0 0 10 10">
+      <path
+        d="M8 2 2 8m0-6 6 6"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="arrowRight" viewBox="0 0 20 20">
+      <path
+        d="M 0 7 L 6.293 0.707 C 6.683 0.317 7.317 0.317 7.707 0.707 L 14 7"
+        transform="translate(6.957 6.457) rotate(90 7 3.5)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 0 14 L 0 0"
+        transform="translate(9.457 3.457) rotate(90 0.5 7)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="arrowLeft" viewBox="0 0 20 20">
+      <path
+        d="M 0 7 L 6.293 0.707 C 6.683 0.317 7.317 0.317 7.707 0.707 L 14 7"
+        transform="translate(-0.957 6.457) rotate(-90 7 3.5)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 0 14 L 0 0"
+        transform="translate(9.543 2.457) rotate(-90 0.5 7)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="arrowUp" viewBox="0 0 20 20">
+      <g transform="translate(3 3) rotate(180 7 7)">
+        <path
+          d="M 0 7.414 L 6.273 0.77 C 6.668 0.352 7.332 0.352 7.727 0.77 L 14 7.414"
+          transform="translate(0 7) rotate(180 7 3.75)"
+          fill="transparent"
+          stroke-width="2"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 0 13.5 L 0 0"
+          transform="translate(6 0) rotate(180 0.5 6.75)"
+          fill="transparent"
+          stroke-width="2"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="repost" viewBox="0 0 20 20">
+      <path
+        d="M 3 12.5 L 3 12.5 C 1.343 12.5 0 11.157 0 9.5 L 0 0"
+        transform="translate(9.25 7.25) rotate(270 1.5 6.25)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 3 12.5 L 3 3 C 3 1.343 1.657 0 0 0 L 0 0"
+        transform="translate(7.75 0.25) rotate(270 1.5 6.25)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 0 4 L 3.293 0.707 C 3.683 0.317 4.317 0.317 4.707 0.707 L 8 4"
+        transform="translate(11.5 3) rotate(90 4 2)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 0 4 L 3.293 0.707 C 3.683 0.317 4.317 0.317 4.707 0.707 L 8 4"
+        transform="translate(0.5 13) rotate(-90 4 2)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="share" viewBox="0 0 20 20">
+      <path
+        d="M 5 4 L 15 4 C 15.552 4 16 4.448 16 5 L 16 15"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 15 5 L 4 16"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="check" viewBox="0 0 20 20">
+      <path
+        d="M 0 5 L 5 10 L 15 0"
+        transform="translate(2.5 5) rotate(360 7.5 5)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="sliders" viewBox="0 0 20 20">
+      <path
+        d="M 6 2 C 7.657 2 9 3.343 9 5 C 9 6.657 7.657 8 6 8 C 4.343 8 3 6.657 3 5 C 3 3.343 4.343 2 6 2 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 14 12 C 15.657 12 17 13.343 17 15 C 17 16.657 15.657 18 14 18 C 12.343 18 11 16.657 11 15 C 11 13.343 12.343 12 14 12 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 17 5 L 9 5"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 11 15 L 3 15"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="search" viewBox="0 0 20 20">
+      <path
+        d="M 9.5 2 C 13.642 2 17 5.358 17 9.5 C 17 13.642 13.642 17 9.5 17 C 5.358 17 2 13.642 2 9.5 C 2 5.358 5.358 2 9.5 2 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+      <path
+        d="M 15 15 L 18 18"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="caretDown" viewBox="0 0 20 20">
+      <path
+        d="M 0 7 L 6.293 0.707 C 6.683 0.317 7.317 0.317 7.707 0.707 L 14 7"
+        transform="translate(3 6.5) rotate(540 7 3.5)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+    <symbol id="caretDownBold" viewBox="0 0 20 20">
+      <path
+        d="M 0 7 L 6.293 0.707 C 6.683 0.317 7.317 0.317 7.707 0.707 L 14 7"
+        transform="translate(3 6.5) rotate(540 7 3.5)"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        vector-effect="non-scaling-stroke"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="caretRight" viewBox="0 0 20 20">
+      <path
+        d="M 0 7 L 6.293 0.707 C 6.683 0.317 7.317 0.317 7.707 0.707 L 14 7"
+        transform="translate(3 6.5) rotate(450 7 3.5)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeCaretLeft" viewBox="0 0 20 20" overflow="visible">
+      <path
+        d="M 0 4 L 3.293 0.707 C 3.683 0.317 4.317 0.317 4.707 0.707 L 8 4"
+        transform="translate(5.5 8) rotate(270 4 2)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeCaretRight" viewBox="0 0 20 20" overflow="visible">
+      <path
+        d="M 0 4 L 3.293 0.707 C 3.683 0.317 4.317 0.317 4.707 0.707 L 8 4"
+        transform="translate(6.5 8) rotate(450 4 2)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="filter" viewBox="0 0 20 20">
+      <path
+        d="M 1 4 C 1 3.448 1.448 3 2 3 L 18 3 C 18.552 3 19 3.448 19 4 L 19 4 C 19 4.552 18.552 5 18 5 L 2 5 C 1.448 5 1 4.552 1 4 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 4 10 C 4 9.448 4.448 9 5 9 L 15 9 C 15.552 9 16 9.448 16 10 L 16 10 C 16 10.552 15.552 11 15 11 L 5 11 C 4.448 11 4 10.552 4 10 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 7 16 C 7 15.448 7.448 15 8 15 L 12 15 C 12.552 15 13 15.448 13 16 L 13 16 C 13 16.552 12.552 17 12 17 L 8 17 C 7.448 17 7 16.552 7 16 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="card" viewBox="0 0 20 20">
+      <path
+        d="M 3 7 C 3 5.343 4.343 4 6 4 L 14 4 C 15.657 4 17 5.343 17 7 L 17 13 C 17 14.657 15.657 16 14 16 L 6 16 C 4.343 16 3 14.657 3 13 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+      <path
+        d="M 3 8 L 17 8"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="star" viewBox="0 0 20 20">
+      <path
+        d="M 10 1.859 L 12.645 7.219 L 18.56 8.078 L 14.28 12.25 L 15.29 18.141 L 10 15.359 L 4.71 18.141 L 5.72 12.25 L 1.44 8.078 L 7.355 7.219 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="image" viewBox="0 0 20 20">
+      <path
+        d="M 3 6 C 3 4.343 4.343 3 6 3 L 14 3 C 15.657 3 17 4.343 17 6 L 17 14 C 17 15.657 15.657 17 14 17 L 6 17 C 4.343 17 3 15.657 3 14 Z"
+        fill="transparent" stroke-width="2" stroke="var(--icon-fill, currentColor)"></path>
+      <path
+        d="M 3 13 C 6.402 8.141 13.598 8.141 17 13 L 17 13 L 17 14 C 17 15.657 15.657 17 14 17 L 6 17 C 4.343 17 3 15.657 3 14 L 3 13 Z"
+        fill="var(--icon-fill, currentColor)" style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke-width="2" stroke="var(--icon-fill, currentColor)"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="layout" viewBox="0 0 20 20">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M1.25 3.25a2 2 0 0 1 2-2h5.5a2 2 0 0 1 2 2v5.5a2 2 0 0 1-2 2h-5.5a2 2 0 0 1-2-2Z"
+      />
+      <path fill="transparent" stroke="currentColor" d="M6 2v8" />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="write" viewBox="0 0 20 20">
+      <path
+        d="M 1 19 C 1 18.448 1.448 18 2 18 L 18 18 C 18.552 18 19 18.448 19 19 C 19 19.552 18.552 20 18 20 L 2 20 C 1.448 20 1 19.552 1 19 Z"
+        fill="var(--icon-fill, currentColor)"></path>
+      <path
+        d="M 0 3 C 0 1.343 1.343 0 3 0 C 4.657 0 6 1.343 6 3 L 6 14.172 C 6 14.702 5.789 15.211 5.414 15.586 L 3.707 17.293 C 3.317 17.683 2.683 17.683 2.293 17.293 L 0.586 15.586 C 0.211 15.211 0 14.702 0 14.172 Z"
+        transform="translate(5.5 -0.5) rotate(45 3 9)" fill="var(--icon-fill, currentColor)"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2" stroke="var(--icon-fill, currentColor)"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="collection" viewBox="0 0 20 20">
+      <path
+        d="M 15.5 11 C 17.433 11 19 12.567 19 14.5 C 19 16.433 17.433 18 15.5 18 C 13.567 18 12 16.433 12 14.5 C 12 12.567 13.567 11 15.5 11 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor" stroke-width="2" />
+      <path
+        d="M 4.5 11 C 6.433 11 8 12.567 8 14.5 C 8 16.433 6.433 18 4.5 18 C 2.567 18 1 16.433 1 14.5 C 1 12.567 2.567 11 4.5 11 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor" stroke-width="2" />
+      <path
+        d="M 10 2 C 11.933 2 13.5 3.567 13.5 5.5 C 13.5 7.433 11.933 9 10 9 C 8.067 9 6.5 7.433 6.5 5.5 C 6.5 3.567 8.067 2 10 2 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="drop" viewBox="0 0 20 20">
+      <path
+        d="M 7 0 C 10.866 0 14 3.134 14 7 C 14 10.866 10.866 14 7 14 C 6.034 14 3.267 14 3.267 14 L 2 14 C 0.895 14 0 13.105 0 12 L 0 10.267 C 0 10.267 0 7.966 0 7 C 0 3.134 3.134 0 7 0 Z"
+        transform="translate(3 3.793) rotate(135 7 7)"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="resize" viewBox="0 0 20 20">
+      <path
+        d="M 0 0 L 6.5 0 L 6.5 6.5"
+        fill="transparent"
+        height="6.5px"
+        id="OjGlI8Qlc"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        stroke="currentColor"
+        transform="translate(10 3.5)"
+        width="6.5px"
+      ></path>
+      <path
+        d="M 6.5 6.5 L 0 6.5 L 0 0"
+        fill="transparent"
+        height="6.5px"
+        id="ejozTq3FD"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        stroke="currentColor"
+        transform="translate(3.5 10)"
+        width="6.5px"
+      ></path>
+      <path
+        d="M 0 13 L 13 0"
+        fill="transparent"
+        height="13px"
+        id="QOTpqNjAL"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        stroke="currentColor"
+        transform="translate(3.5 3.5)"
+        width="13px"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="grid" viewBox="0 0 20 20">
+      <path
+        d="M 3 6 C 3 4.343 4.343 3 6 3 L 14 3 C 15.657 3 17 4.343 17 6 L 17 14 C 17 15.657 15.657 17 14 17 L 6 17 C 4.343 17 3 15.657 3 14 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke-width="2"
+        stroke="currentColor"></path>
+      <path d="M 4 10 L 16 10" fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke-width="2" stroke="currentColor"></path>
+      <path d="M 10 4 L 10 16" fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke-width="2" stroke="currentColor"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="masonry" viewBox="0 0 20 20">
+      <path
+        d="M 3 6 C 3 4.343 4.343 3 6 3 L 14 3 C 15.657 3 17 4.343 17 6 L 17 14 C 17 15.657 15.657 17 14 17 L 6 17 C 4.343 17 3 15.657 3 14 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+      <path
+        d="M 4 10 L 16 10 M 8 4 L 8 9 M 12 11 L 12 16"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="list" viewBox="0 0 20 20">
+      <path
+        d="M 1 10 C 1 9.448 1.448 9 2 9 L 18 9 C 18.552 9 19 9.448 19 10 L 19 10 C 19 10.552 18.552 11 18 11 L 2 11 C 1.448 11 1 10.552 1 10 Z"
+        fill="currentColor"></path>
+      <path
+        d="M 1 4 C 1 3.448 1.448 3 2 3 L 18 3 C 18.552 3 19 3.448 19 4 L 19 4 C 19 4.552 18.552 5 18 5 L 2 5 C 1.448 5 1 4.552 1 4 Z"
+        fill="currentColor"></path>
+      <path
+        d="M 1 16 C 1 15.448 1.448 15 2 15 L 18 15 C 18.552 15 19 15.448 19 16 L 19 16 C 19 16.552 18.552 17 18 17 L 2 17 C 1.448 17 1 16.552 1 16 Z"
+        fill="currentColor"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="article" viewBox="0 0 20 20">
+      <path
+        d="M 2 5 C 2 3.343 3.343 2 5 2 L 15 2 C 16.657 2 18 3.343 18 5 L 18 15 C 18 16.657 16.657 18 15 18 L 5 18 C 3.343 18 2 16.657 2 15 Z"
+        fill="var(--icon-fill, currentColor)"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="var(--icon-fill, currentColor)"
+      ></path>
+      <path
+        d="M 5 10 C 5 9.448 5.448 9 6 9 L 14 9 C 14.552 9 15 9.448 15 10 L 15 14 C 15 14.552 14.552 15 14 15 L 6 15 C 5.448 15 5 14.552 5 14 Z"
+        fill="var(--icon-fill, currentColor)"
+      ></path>
+      <path
+        d="M 5 6 C 5 5.448 5.448 5 6 5 L 8 5 C 8.552 5 9 5.448 9 6 L 9 6 C 9 6.552 8.552 7 8 7 L 6 7 C 5.448 7 5 6.552 5 6 Z"
+        fill="var(--icon-fill, currentColor)"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="folder" viewBox="0 0 20 20">
+      <path
+        d="M 3 10 C 3 8.343 4.343 7 6 7 L 14 7 C 15.657 7 17 8.343 17 10 L 17 14 C 17 15.657 15.657 17 14 17 L 6 17 C 4.343 17 3 15.657 3 14 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke-width="2"
+        stroke="currentColor"></path>
+      <path d="M 13 6.5 L 13 6 C 13 4.343 11.657 3 10 3 L 6 3 C 4.343 3 3 4.343 3 6 L 3 10"
+        fill="transparent" stroke-width="2" stroke="currentColor" stroke-linecap="round"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="users" viewBox="0 0 20 20">
+      <path
+        d="M 1 17.165 C 1.304 16.447 1.743 15.8 2.286 15.257 C 3.372 14.172 4.872 13.5 6.528 13.5 C 8.185 13.5 9.685 14.172 10.771 15.257 C 11.314 15.8 11.753 16.447 12.057 17.165"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 14.209 13.622 C 14.6 13.702 14.977 13.82 15.335 13.972 C 16.053 14.275 16.7 14.714 17.243 15.257 C 17.786 15.8 18.225 16.447 18.528 17.165"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 6.5 3 C 8.433 3 10 4.567 10 6.5 C 10 8.433 8.433 10 6.5 10 C 4.567 10 3 8.433 3 6.5 C 3 4.567 4.567 3 6.5 3 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 13 3 C 14.933 3 16.5 4.567 16.5 6.5 C 16.5 8.433 14.933 10 13 10"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="user" viewBox="0 0 12 12">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M6 1a2.75 2.75 0 1 1 0 5.5A2.75 2.75 0 0 1 6 1"
+      />
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M2.111 11.111A5.48 5.48 0 0 1 6 9.5c1.519 0 2.894.616 3.889 1.611"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="link" viewBox="0 0 20 20">
+      <path
+        d="M 9.5 3.5 C 11.433 1.567 14.567 1.567 16.5 3.5 L 16.5 3.5 C 18.433 5.433 18.433 8.567 16.5 10.5 L 10.5 16.5 C 8.567 18.433 5.433 18.433 3.5 16.5 L 3.5 16.5 C 1.567 14.567 1.567 11.433 3.5 9.5 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+      ></path>
+      <path
+        d="M 4.892 7.892 L 3.892 8.892 C 1.959 10.825 1.959 13.959 3.892 15.892 L 3.892 15.892 C 5.825 17.825 8.959 17.825 10.892 15.892 L 11.892 14.892 M 14.892 11.892 L 15.892 10.892 C 17.825 8.959 17.825 5.825 15.892 3.892 L 15.892 3.892 C 13.959 1.959 10.825 1.959 8.892 3.892 L 7.892 4.892 M 8.392 11.392 L 11.392 8.392"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="hype" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M7.75 1.5v9M4.25 1.5v9M.75 4.5v3M11.25 4.5v3"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="pin" viewBox="0 0 20 20">
+      <path
+        d="M 10 1 C 13.866 1 17 4.134 17 8 C 17 8 17 8 17 8 L 17 8 C 17 8.003 17 8.006 17 8.009 C 17 8.204 16.992 8.397 16.976 8.589 C 16.581 13.434 11.518 19 10 19 C 8.482 19 3.419 13.434 3.024 8.589 C 3.008 8.395 3 8.198 3 8 C 3 4.134 6.134 1 10 1 Z M 7 8 C 7 9.657 8.343 11 10 11 C 11.657 11 13 9.657 13 8 C 13 6.343 11.657 5 10 5 C 8.343 5 7 6.343 7 8 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="at" viewBox="0 0 20 20">
+      <path
+        d="M 10 6 C 12.209 6 14 7.791 14 10 C 14 12.209 12.209 14 10 14 C 7.791 14 6 12.209 6 10 C 6 7.791 7.791 6 10 6 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+      ></path>
+      <path
+        d="M 14 18 L 10 18 L 10 18 C 5.582 18 2 14.418 2 10 L 2 10 L 2 10 C 2 5.582 5.582 2 10 2 L 10 2 L 10 2 C 14.418 2 18 5.582 18 10 L 18 10 L 18 11.25 C 18 12.493 16.993 13.5 15.75 13.5 L 15.75 13.5 C 14.507 13.5 13.5 12.493 13.5 11.25 L 13.5 10 L 13.5 10 C 13.5 8.067 11.933 6.5 10 6.5 L 10 6.5 L 10 6.5 C 8.067 6.5 6.5 8.067 6.5 10 L 6.5 10 L 6.5 10 C 6.5 11.933 8.067 13.5 10 13.5 L 10 13.5 L 10 13.5 C 11.933 13.5 13.5 11.933 13.5 10 L 13.5 10"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="warning" viewBox="0 0 20 20">
+      <path
+        d="M 2 10 C 2 5.582 5.582 2 10 2 C 14.418 2 18 5.582 18 10 C 18 14.418 14.418 18 10 18 C 5.582 18 2 14.418 2 10 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke-width="2"
+        stroke="currentColor"></path>
+      <path d="M 10 6.5 L 10 10" fill="transparent" stroke-width="2" stroke="currentColor"
+        stroke-linecap="round"></path>
+      <path
+        d="M 10 12.5 C 10.552 12.5 11 12.948 11 13.5 C 11 14.052 10.552 14.5 10 14.5 C 9.448 14.5 9 14.052 9 13.5 C 9 12.948 9.448 12.5 10 12.5 Z"
+        fill="currentColor"></path>
+    </symbol>
+    <symbol id="path" viewBox="0 0 20 20">
+      <path
+        d="M 15.5 1 C 17.433 1 19 2.567 19 4.5 C 19 6.433 17.433 8 15.5 8 C 13.567 8 12 6.433 12 4.5 C 12 2.567 13.567 1 15.5 1 Z"
+        fill="currentColor"></path>
+      <path
+        d="M 4.5 12 C 6.433 12 8 13.567 8 15.5 C 8 17.433 6.433 19 4.5 19 C 2.567 19 1 17.433 1 15.5 C 1 13.567 2.567 12 4.5 12 Z"
+        fill="currentColor"></path>
+      <path d="M 5 15 L 15 5" fill="transparent" stroke-width="2" stroke="currentColor"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="component" viewBox="0 0 12 12">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        d="M4.586 1.354a2 2 0 0 1 2.828 0l3.232 3.232a2 2 0 0 1 0 2.828l-3.232 3.232a2 2 0 0 1-2.828 0L1.354 7.414a2 2 0 0 1 0-2.828Z"
+      />
+      <path fill="transparent" stroke="currentColor" d="m3 3 6 6M9 3 3 9" />
+    </symbol>
+    <symbol id="plugins" viewBox="0 0 12 12">
+      <g
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      >
+        <path
+          fill="currentColor"
+          style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+          d="M4.25 2.25a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a1.5 1.5 0 0 1-1.5-1.5Z"
+        />
+        <path
+          fill="transparent"
+          d="M8 7.75a3.5 3.5 0 0 1-3.5 3.5h0A3.5 3.5 0 0 1 1 7.75V7.5a3.25 3.25 0 0 1 3.25-3.25h0"
+        />
+      </g>
+    </symbol>
+    <symbol id="plus" viewBox="0 0 20 20">
+      <path d="M 0 0 L 0 14" fill="transparent" height="14px" id="zp0jEVU_d" stroke-dasharray="0"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
+        transform="translate(10 3)" width="1px"></path>
+      <path d="M 0 0 L 14 0" fill="transparent" height="1px" id="BP59PvdP3" stroke-dasharray="0"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
+        transform="translate(3 10)" width="14px"></path>
+    </symbol>
+    <symbol id="plus-thread" viewBox="0 0 20 20">
+      <path d="M 10 5 L 10 15 M 5 10 L 15 10" fill="transparent" stroke-width="2"
+        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="instagram" viewBox="0 0 20 20">
+      <path
+        d="M 0 4.667 C 0 2.089 2.089 0 4.667 0 L 11.333 0 C 13.911 0 16 2.089 16 4.667 L 16 11.333 C 16 13.911 13.911 16 11.333 16 L 4.667 16 C 2.089 16 0 13.911 0 11.333 Z M 11.333 3.333 C 11.322 3.817 11.574 4.268 11.991 4.513 C 12.408 4.758 12.924 4.758 13.341 4.513 C 13.758 4.269 14.01 3.817 13.999 3.334 C 13.983 2.609 13.391 2.03 12.667 2.03 C 11.942 2.03 11.35 2.609 11.333 3.333 Z M 4.667 8 C 4.667 9.841 6.16 11.334 8.001 11.333 C 9.842 11.333 11.334 9.84 11.334 7.999 C 11.334 6.158 9.841 4.666 8 4.666 C 6.159 4.666 4.666 6.159 4.667 8 Z"
+        fill="currentColor"
+        transform="translate(2 2)"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="youtube" viewBox="0 0 20 20">
+      <path
+        d="M 18 6.136 C 18 6.136 18 8.99 17.624 10.356 C 17.415 11.112 16.808 11.703 16.032 11.906 C 14.629 12.273 9 12.273 9 12.273 C 9 12.273 3.371 12.273 1.968 11.906 C 1.191 11.703 0.585 11.112 0.376 10.356 C 0 8.99 0 6.136 0 6.136 C 0 6.136 0 3.283 0.376 1.917 C 0.585 1.161 1.191 0.57 1.968 0.367 C 3.371 0 9 0 9 0 C 9 0 14.629 0 16.032 0.367 C 16.809 0.57 17.415 1.16 17.624 1.917 C 17.998 3.283 18 6.136 18 6.136 Z M 7.198 8.766 L 11.875 6.137 L 7.198 3.507 Z"
+        transform="translate(1 4)"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="x" viewBox="0 0 20 20">
+      <path
+        d="M 12.6 0 L 15.054 0 L 9.694 5.93 L 16 14 L 11.062 14 L 7.195 9.106 L 2.77 14 L 0.315 14 L 6.049 7.657 L 0 0 L 5.062 0 L 8.558 4.474 Z"
+        transform="translate(2 3)"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="linkedin" viewBox="0 0 20 20">
+      <path
+        d="M 2 6 C 2 3.791 3.791 2 6 2 L 14 2 C 16.209 2 18 3.791 18 6 L 18 14 C 18 16.209 16.209 18 14 18 L 6 18 C 3.791 18 2 16.209 2 14 Z M 7.334 14.686 L 7.334 8.613 L 5.405 8.613 L 5.405 14.686 Z M 6.369 7.784 C 7.042 7.784 7.461 7.318 7.461 6.735 C 7.448 6.139 7.042 5.686 6.382 5.686 C 5.722 5.686 5.291 6.139 5.291 6.735 C 5.291 7.318 5.709 7.784 6.357 7.784 Z M 8.401 14.686 C 8.401 14.686 8.401 14.686 8.401 14.686 L 8.401 14.686 Z M 10.331 14.686 L 10.331 11.295 C 10.331 11.113 10.343 10.932 10.394 10.802 C 10.534 10.44 10.851 10.064 11.384 10.064 C 12.082 10.064 12.361 10.621 12.361 11.437 L 12.361 14.686 L 14.291 14.686 L 14.291 11.204 C 14.291 9.339 13.339 8.471 12.069 8.471 C 11.046 8.471 10.587 9.059 10.331 9.473 L 10.331 8.613 L 8.401 8.613 C 8.427 9.181 8.402 14.65 8.401 14.686 Z"
+        fill="currentColor"
+      />
+    </symbol>
+    <symbol id="threads" viewBox="0 0 20 20">
+      <path
+        d="M 13.894 9.416 C 13.824 9.382 13.752 9.351 13.681 9.32 C 13.555 7.045 12.29 5.742 10.167 5.729 L 10.138 5.729 C 8.868 5.729 7.812 6.262 7.162 7.232 L 8.329 8.019 C 8.815 7.295 9.577 7.14 10.139 7.14 L 10.158 7.14 C 10.857 7.145 11.385 7.345 11.726 7.734 C 11.975 8.018 12.141 8.41 12.223 8.905 C 11.603 8.802 10.933 8.77 10.216 8.81 C 8.198 8.925 6.9 10.082 6.987 11.691 C 7.031 12.507 7.444 13.209 8.151 13.668 C 8.748 14.055 9.517 14.245 10.317 14.202 C 11.373 14.145 12.201 13.749 12.779 13.025 C 13.218 12.475 13.495 11.762 13.618 10.864 C 14.121 11.162 14.494 11.555 14.7 12.028 C 15.05 12.831 15.071 14.15 13.976 15.226 C 13.016 16.168 11.863 16.576 10.12 16.588 C 8.187 16.574 6.725 15.965 5.775 14.776 C 4.885 13.664 4.425 12.057 4.407 10 C 4.425 7.943 4.885 6.336 5.775 5.224 C 6.725 4.035 8.187 3.426 10.12 3.412 C 12.068 3.426 13.555 4.038 14.542 5.232 C 15.026 5.818 15.391 6.554 15.631 7.412 L 17 7.053 C 16.708 5.997 16.25 5.086 15.625 4.331 C 14.36 2.801 12.51 2.016 10.125 2 L 10.116 2 C 7.736 2.016 5.906 2.803 4.677 4.34 C 3.583 5.707 3.019 7.61 3 9.994 L 3 10 L 3 10.006 C 3.019 12.39 3.583 14.293 4.677 15.66 C 5.906 17.197 7.736 17.984 10.116 18 L 10.125 18 C 12.241 17.986 13.732 17.441 14.96 16.234 C 16.568 14.656 16.519 12.677 15.989 11.462 C 15.609 10.591 14.885 9.883 13.894 9.416 Z M 10.241 12.792 C 9.357 12.841 8.437 12.451 8.392 11.614 C 8.358 10.994 8.841 10.302 10.296 10.22 C 10.459 10.21 10.623 10.206 10.786 10.206 C 11.315 10.206 11.809 10.256 12.259 10.353 C 12.091 12.411 11.108 12.746 10.241 12.792 Z"
+        fill="currentColor"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="dots" viewBox="0 0 20 20">
+      <circle cx="2.31" cy="10" r="2.31" fill="currentColor"></circle>
+      <circle cx="10" cy="10" r="2.31" fill="currentColor"></circle>
+      <circle cx="17.69" cy="10" r="2.31" fill="currentColor"></circle>
+    </symbol>
+    <symbol id="cog" viewBox="0 0 20 20" fill="none">
+      <path
+        d="M 2 7.255 C 2 6.171 2.585 5.171 3.529 4.64 L 8.529 1.827 C 9.442 1.314 10.558 1.314 11.471 1.827 L 16.471 4.64 C 17.415 5.171 18 6.171 18 7.255 L 18 12.745 C 18 13.829 17.415 14.829 16.471 15.36 L 11.471 18.173 C 10.558 18.686 9.442 18.686 8.529 18.173 L 3.529 15.36 C 2.585 14.829 2 13.829 2 12.745 Z M 7 10 C 7 11.657 8.343 13 10 13 C 11.657 13 13 11.657 13 10 C 13 8.343 11.657 7 10 7 C 8.343 7 7 8.343 7 10 Z"
+        fill="currentColor" style="fill-opacity: var(--icon-fill-opacity, 0.15)" stroke="currentColor" stroke-width="2" />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="cursor" viewBox="0 0 20 20">
+      <path
+        d="M 3.383 17.372 C 2.123 17.792 0.979 16.488 1.56 15.293 L 7.202 3.697 C 7.931 2.197 10.069 2.197 10.798 3.697 L 16.44 15.293 C 17.021 16.488 15.877 17.792 14.617 17.372 L 9.632 15.711 C 9.222 15.574 8.778 15.574 8.368 15.711 Z"
+        transform="translate(-1.5 -1.5) rotate(-45 9 9.25)"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="display" viewBox="0 0 20 20">
+      <path
+        d="M 2 5 C 2 3.343 3.343 2 5 2 L 10 2 L 15 2 C 16.657 2 18 3.343 18 5 L 18 12 C 18 13.657 16.657 15 15 15 L 5 15 C 3.343 15 2 13.657 2 12 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+      <path
+        d="M 13 18 L 7 18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="help" viewBox="0 0 20 20">
+      <path
+        d="M 10 2 C 14.418 2 18 5.582 18 10 C 18 14.418 14.418 18 10 18 C 5.582 18 2 14.418 2 10 C 2 5.582 5.582 2 10 2 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+      <path
+        d="M 7.5 8.5 L 7.5 8.5 C 7.5 7.119 8.619 6 10 6 L 10 6 C 11.381 6 12.5 7.119 12.5 8.5 L 12.5 8.5 C 12.5 9.881 11.381 11 10 11 L 10 11"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      ></path>
+      <path
+        d="M 10 13 C 10.552 13 11 13.448 11 14 C 11 14.552 10.552 15 10 15 C 9.448 15 9 14.552 9 14 C 9 13.448 9.448 13 10 13 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="sparkle" viewBox="0 0 20 20">
+      <path
+        d="M 8.393 2.496 C 8.453 1.653 9.155 1 10 1 L 10 1 C 10.845 1 11.547 1.653 11.607 2.496 L 11.615 2.615 C 11.836 5.706 14.294 8.164 17.385 8.385 L 17.504 8.393 C 18.347 8.453 19 9.155 19 10 L 19 10 C 19 10.845 18.347 11.547 17.504 11.607 L 17.385 11.615 C 14.294 11.836 11.836 14.294 11.615 17.385 L 11.607 17.504 C 11.547 18.347 10.845 19 10 19 L 10 19 C 9.155 19 8.453 18.347 8.393 17.504 L 8.385 17.385 C 8.164 14.294 5.706 11.836 2.615 11.615 L 2.496 11.607 C 1.653 11.547 1 10.845 1 10 L 1 10 C 1 9.155 1.653 8.453 2.496 8.393 L 2.615 8.385 C 5.706 8.164 8.164 5.706 8.385 2.615 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="hand" viewBox="0 0 20 20">
+      <path
+        d="M 9.852 18.648 C 14.026 19.597 18 16.424 18 12.144 L 18 5.5 C 18 4.672 17.328 4 16.5 4 L 16.5 4 C 15.672 4 15 4.672 15 5.5 L 15 8 L 15 9 L 15 9 L 15 3.5 C 15 2.672 14.328 2 13.5 2 L 13.5 2 C 12.672 2 12 2.672 12 3.5 L 12 9 L 12 9 L 12 2.5 C 12 1.672 11.328 1 10.5 1 L 10.5 1 C 9.672 1 9 1.672 9 2.5 L 9 9 L 9 9 L 9 4.5 C 9 3.672 8.328 3 7.5 3 L 7.5 3 C 6.672 3 6 3.672 6 4.5 L 6 9 L 6 9.566 C 6 10.013 5.426 10.197 5.167 9.833 L 4.43 8.803 C 3.925 8.095 2.929 7.957 2.25 8.5 L 2.25 8.5 C 1.548 9.062 1.405 10.073 1.923 10.808 L 5.451 15.806 C 6.448 17.218 7.933 18.212 9.619 18.595 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="tag" viewBox="0 0 20 20">
+      <path
+        d="M 4 5 C 4 3.343 5.343 2 7 2 L 13 2 C 14.657 2 16 3.343 16 5 L 16 18 L 10 14 L 4 18 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="trash" viewBox="0 0 20 20">
+      <path
+        d="M 4 6 L 16 6 L 16 15 C 16 16.657 14.657 18 13 18 L 7 18 C 5.343 18 4 16.657 4 15 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+      ></path>
+      <path
+        d="M 1.5 6 L 18.5 6"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 6.5 6 L 13.5 6 L 13.5 3.5 C 13.5 2.395 12.605 1.5 11.5 1.5 L 8.5 1.5 C 7.395 1.5 6.5 2.395 6.5 3.5 Z"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="paragraph" viewBox="0 0 20 20">
+      <path
+        d="M 8 14 L 8 6.1 C 8 6.045 8.045 6 8.1 6 L 11.6 6 C 12.705 6 13.6 6.895 13.6 8 L 13.6 8 C 13.6 9.105 12.705 10 11.6 10 L 8 10"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="heading1" viewBox="0 0 20 20">
+      <g transform="translate(4 5)">
+        <path
+          d="M 0 0 L 0 8 M 7 0 L 7 8 M 0 4 L 7 4"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+        ></path>
+        <path
+          d="M 11 6.5 L 13 5 L 13 11"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="heading2" viewBox="0 0 20 20">
+      <g transform="translate(3 4)">
+        <path
+          d="M 0 0 L 0 8 M 7 0 L 7 8 M 0 4 L 7 4"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+        ></path>
+        <path
+          d="M 11.118 5.937 C 11.332 5.404 11.833 5.041 12.406 5.003 C 12.978 4.965 13.523 5.259 13.805 5.759 C 14.088 6.258 14.061 6.876 13.735 7.348 L 11 11.002 L 13.992 11.002"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="chevronDown" viewBox="0 0 10 10">
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M2.5 3.75 5 6.25l2.5-2.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="bubbleLink" viewBox="0 0 26 26">
+      <g transform="translate(8.672 8.672)">
+        <path
+          d="M 1.328 3.328 L 0.828 3.828 C -0.276 4.933 -0.276 6.724 0.828 7.828 L 0.828 7.828 C 1.933 8.933 3.724 8.933 4.828 7.828 L 5.328 7.328"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 7.328 5.328 L 7.828 4.828 C 8.933 3.724 8.933 1.933 7.828 0.828 L 7.828 0.828 C 6.724 -0.276 4.933 -0.276 3.828 0.828 L 3.328 1.328"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 3.321 5.335 L 5.335 3.322"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="bold" viewBox="0 0 26 26">
+      <path
+        d="M 10 9.1 C 10 9.045 10.045 9 10.1 9 L 13.6 9 C 14.705 9 15.6 9.895 15.6 11 L 15.6 11 C 15.6 12.105 14.705 13 13.6 13 L 10 13 L 14.4 13 C 15.505 13 16.4 13.895 16.4 15 L 16.4 15 C 16.4 16.105 15.505 17 14.4 17 L 10.1 17 C 10.045 17 10 16.955 10 16.9 Z"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="italic" viewBox="0 0 26 26">
+      <g transform="translate(9 9)">
+        <path
+          d="M 0 8 L 4.8 8"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M 6 0 L 2 8"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M 3.2 0 L 8 0"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="blockquote" viewBox="0 0 26 26">
+      <g transform="translate(7 9.5)">
+        <path
+          d="M 0.75 6 L 0.75 3 C 0.75 1.343 2.093 0 3.75 0 L 3.75 0"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M 0 5.5 C 0 4.395 0.895 3.5 2 3.5 L 2.5 3.5 C 3.605 3.5 4.5 4.395 4.5 5.5 L 4.5 6 C 4.5 7.105 3.605 8 2.5 8 L 2 8 C 0.895 8 0 7.105 0 6 Z"
+          fill="currentColor"
+        ></path>
+        <path
+          d="M 7.75 6 L 7.75 3 C 7.75 1.343 9.093 0 10.75 0 L 10.75 0"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+        ></path>
+        <path
+          d="M 7 5.5 C 7 4.395 7.895 3.5 9 3.5 L 9.5 3.5 C 10.605 3.5 11.5 4.395 11.5 5.5 L 11.5 6 C 11.5 7.105 10.605 8 9.5 8 L 9 8 C 7.895 8 7 7.105 7 6 Z"
+          fill="currentColor"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="code" viewBox="0 0 26 26">
+      <g transform="translate(7 9.5)">
+        <path
+          d="M 8.5 0 L 12 3.5 L 8.5 7"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 3.5 0 L 0 3.5 L 3.5 7"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="bulletList" viewBox="0 0 26 26">
+      <path
+        d="M 7 7.75 C 7.552 7.75 8 8.198 8 8.75 C 8 9.302 7.552 9.75 7 9.75 C 6.448 9.75 6 9.302 6 8.75 C 6 8.198 6.448 7.75 7 7.75 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 7 11.75 C 7.552 11.75 8 12.198 8 12.75 C 8 13.302 7.552 13.75 7 13.75 C 6.448 13.75 6 13.302 6 12.75 C 6 12.198 6.448 11.75 7 11.75 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 7 15.75 C 7.552 15.75 8 16.198 8 16.75 C 8 17.302 7.552 17.75 7 17.75 C 6.448 17.75 6 17.302 6 16.75 C 6 16.198 6.448 15.75 7 15.75 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 10.75 8 L 19.25 8 C 19.664 8 20 8.336 20 8.75 C 20 9.164 19.664 9.5 19.25 9.5 L 10.75 9.5 C 10.336 9.5 10 9.164 10 8.75 C 10 8.336 10.336 8 10.75 8 Z M 10.75 12 L 19.25 12 C 19.664 12 20 12.336 20 12.75 C 20 13.164 19.664 13.5 19.25 13.5 L 10.75 13.5 C 10.336 13.5 10 13.164 10 12.75 C 10 12.336 10.336 12 10.75 12 Z M 10.75 16 L 19.25 16 C 19.664 16 20 16.336 20 16.75 C 20 17.164 19.664 17.5 19.25 17.5 L 10.75 17.5 C 10.336 17.5 10 17.164 10 16.75 C 10 16.336 10.336 16 10.75 16 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="orderedList" viewBox="0 0 26 26">
+      <path
+        d="M 6.438 7.156 L 7.813 6.469 L 7.813 11.281 M 6.532 15.114 C 6.705 14.686 7.107 14.395 7.568 14.364 C 8.029 14.334 8.466 14.569 8.694 14.971 C 8.922 15.372 8.9 15.869 8.637 16.248 L 6.438 19.188 L 8.844 19.188"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-dasharray=""
+      ></path>
+      <path
+        d="M 11.75 8 L 19.25 8 C 19.664 8 20 8.336 20 8.75 C 20 9.164 19.664 9.5 19.25 9.5 L 11.75 9.5 C 11.336 9.5 11 9.164 11 8.75 C 11 8.336 11.336 8 11.75 8 Z M 11.75 12 L 19.25 12 C 19.664 12 20 12.336 20 12.75 C 20 13.164 19.664 13.5 19.25 13.5 L 11.75 13.5 C 11.336 13.5 11 13.164 11 12.75 C 11 12.336 11.336 12 11.75 12 Z M 11.75 16 L 19.25 16 C 19.664 16 20 16.336 20 16.75 C 20 17.164 19.664 17.5 19.25 17.5 L 11.75 17.5 C 11.336 17.5 11 17.164 11 16.75 C 11 16.336 11.336 16 11.75 16 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="sun" viewBox="0 0 20 20">
+      <path
+        d="M 9 1 C 9 0.448 9.448 0 10 0 C 10.552 0 11 0.448 11 1 L 11 3 C 11 3.552 10.552 4 10 4 C 9.448 4 9 3.552 9 3 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 9 17 C 9 16.448 9.448 16 10 16 C 10.552 16 11 16.448 11 17 L 11 19 C 11 19.552 10.552 20 10 20 C 9.448 20 9 19.552 9 19 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 1 11 C 0.448 11 0 10.552 0 10 C 0 9.448 0.448 9 1 9 L 3 9 C 3.552 9 4 9.448 4 10 C 4 10.552 3.552 11 3 11 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 17 11 C 16.448 11 16 10.552 16 10 C 16 9.448 16.448 9 17 9 L 19 9 C 19.552 9 20 9.448 20 10 C 20 10.552 19.552 11 19 11 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 15.657 2.929 C 16.049 2.55 16.673 2.555 17.059 2.941 C 17.445 3.327 17.45 3.951 17.071 4.343 L 15.657 5.757 C 15.265 6.136 14.641 6.131 14.255 5.745 C 13.869 5.359 13.864 4.735 14.243 4.343 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 4.343 14.243 C 4.735 13.864 5.359 13.869 5.745 14.255 C 6.131 14.641 6.136 15.265 5.757 15.657 L 4.343 17.07 C 3.951 17.449 3.327 17.444 2.941 17.058 C 2.555 16.672 2.55 16.048 2.929 15.656 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 2.929 4.343 C 2.56 3.949 2.57 3.333 2.952 2.952 C 3.334 2.57 3.949 2.56 4.343 2.93 L 5.757 4.344 C 6.136 4.736 6.131 5.36 5.745 5.746 C 5.359 6.132 4.735 6.137 4.343 5.758 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 14.243 15.657 C 13.864 15.265 13.869 14.641 14.255 14.255 C 14.641 13.869 15.265 13.864 15.657 14.243 L 17.071 15.657 C 17.45 16.049 17.445 16.673 17.059 17.059 C 16.673 17.445 16.049 17.45 15.657 17.071 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 10 6.5 C 11.933 6.5 13.5 8.067 13.5 10 C 13.5 11.933 11.933 13.5 10 13.5 C 8.067 13.5 6.5 11.933 6.5 10 C 6.5 8.067 8.067 6.5 10 6.5 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="lock" viewBox="0 0 20 20">
+      <path
+        d="M 3 11 C 3 9.343 4.343 8 6 8 L 10 8 L 14 8 C 15.657 8 17 9.343 17 11 L 17 15 C 17 16.657 15.657 18 14 18 L 6 18 C 4.343 18 3 16.657 3 15 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+      <path
+        d="M 14 7 L 14 6 C 14 3.791 12.209 2 10 2 L 10 2 C 7.791 2 6 3.791 6 6 L 6 7"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="checkCircle" viewBox="0 0 20 20">
+      <path
+        d="M 2 10 C 2 5.582 5.582 2 10 2 L 10 2 C 14.418 2 18 5.582 18 10 L 18 10 C 18 14.418 14.418 18 10 18 L 10 18 C 5.582 18 2 14.418 2 10 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+      ></path>
+      <path
+        d="M 0 2.5 L 2.333 5 L 7 0"
+        transform="translate(6.5 8) rotate(360 3.5 2.5)"
+        fill="transparent"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+    <symbol id="clock" viewBox="0 0 20 20">
+      <path
+        d="M 2 10 C 2 5.582 5.582 2 10 2 L 10 2 C 14.418 2 18 5.582 18 10 L 18 10 C 18 14.418 14.418 18 10 18 L 10 18 C 5.582 18 2 14.418 2 10 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+      <path
+        d="M 10 6 L 10 10 M 10 10 L 14 10"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="moon" viewBox="0 0 20 20">
+      <path
+        d="M 17.972 11.68 C 17.886 11.403 17.629 11.215 17.338 11.217 L 17.159 11.249 C 14.787 11.905 12.246 11.234 10.506 9.492 C 8.767 7.751 8.098 5.209 8.756 2.837 C 8.772 2.79 8.781 2.741 8.78 2.691 C 8.798 2.477 8.707 2.269 8.538 2.137 C 8.37 2.004 8.146 1.965 7.942 2.032 C 4.162 3.091 1.676 6.698 2.034 10.608 C 2.392 14.518 5.491 17.614 9.401 17.969 C 13.311 18.324 16.916 15.836 17.972 12.055 C 18.013 11.933 18.013 11.802 17.972 11.68 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="triangle" viewBox="0 0 12 12">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M5.148 1.884a1 1 0 0 1 1.704 0l4.21 6.842a1 1 0 0 1-.852 1.524H1.79a1 1 0 0 1-.852-1.524Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="hourglass" viewBox="0 0 20 20">
+      <path
+        d="M 10 10 L 5.218 6.522 C 3.259 5.098 4.267 2 6.688 2 L 13.312 2 C 15.733 2 16.741 5.098 14.782 6.522 Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 10 10 L 5.218 13.478 C 3.259 14.902 4.267 18 6.688 18 L 13.312 18 C 15.733 18 16.741 14.902 14.782 13.478 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+    <symbol id="marketplace" viewBox="0 0 20 20">
+      <path
+        d="M 1.667 5.833 C 1.667 3.532 3.532 1.667 5.833 1.667 L 14.167 1.667 C 16.468 1.667 18.333 3.532 18.333 5.833 L 18.333 14.167 C 18.333 16.468 16.468 18.333 14.167 18.333 L 5.833 18.333 C 3.532 18.333 1.667 16.468 1.667 14.167 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 13.125 6.875 C 13.125 8.601 11.726 10 10 10 C 8.274 10 6.875 8.601 6.875 6.875"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+    <symbol id="gallery" viewBox="0 0 20 20">
+      <path
+        d="M 2.083 11.667 C 2.083 13.508 3.575 15 5.417 15 L 14.583 15 C 16.425 15 17.917 13.508 17.917 11.667 L 17.917 5.417 C 17.917 3.575 16.425 2.083 14.583 2.083 L 5.417 2.083 C 3.575 2.083 2.083 3.575 2.083 5.417 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="2"
+      ></path>
+      <path
+        d="M 14.167 18.75 L 5.833 18.75"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeSearch" viewBox="0 0 12 12">
+      <path
+        d="M 5 0 C 7.761 0 10 2.239 10 5 C 10 6.046 9.679 7.017 9.13 7.819 L 11.164 9.854 C 11.457 10.146 11.457 10.621 11.164 10.914 C 10.871 11.207 10.396 11.207 10.104 10.914 L 8.107 8.918 C 7.254 9.595 6.174 10 5 10 C 2.239 10 0 7.761 0 5 C 0 2.239 2.239 0 5 0 Z M 1.5 5 C 1.5 6.933 3.067 8.5 5 8.5 C 6.933 8.5 8.5 6.933 8.5 5 C 8.5 3.067 6.933 1.5 5 1.5 C 3.067 1.5 1.5 3.067 1.5 5 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeFilter" viewBox="0 0 18 12">
+      <path
+        d="M 0 1 C 0 0.448 0.448 0 1 0 L 17 0 C 17.552 0 18 0.448 18 1 C 18 1.552 17.552 2 17 2 L 1 2 C 0.448 2 0 1.552 0 1 Z M 3 6 C 3 5.448 3.448 5 4 5 L 14 5 C 14.552 5 15 5.448 15 6 C 15 6.552 14.552 7 14 7 L 4 7 C 3.448 7 3 6.552 3 6 Z M 6 11 C 6 10.448 6.448 10 7 10 L 11 10 C 11.552 10 12 10.448 12 11 C 12 11.552 11.552 12 11 12 L 7 12 C 6.448 12 6 11.552 6 11 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeFolder" viewBox="0 0 12 12" overflow="visible">
+      <path
+        d="M 1.25 8.75 C 1.25 9.855 2.145 10.75 3.25 10.75 L 8.75 10.75 C 9.855 10.75 10.75 9.855 10.75 8.75 L 10.75 5.75 C 10.75 4.645 9.855 3.75 8.75 3.75 L 3.25 3.75 C 2.145 3.75 1.25 4.645 1.25 5.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+      <path
+        d="M 1.25 5.25 L 1.25 2.25 C 1.25 1.422 1.922 0.75 2.75 0.75 L 5.25 0.75 C 6.078 0.75 6.75 1.422 6.75 2.25 L 6.75 3.5"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeSort" viewBox="0 0 17 13.293" overflow="visible">
+      <path
+        d="M 0 3.793 L 3.47 0.324 C 3.763 0.032 4.237 0.032 4.53 0.324 L 8 3.793 M 4 1.793 L 4 13.293 M 9 9.5 L 12.47 12.97 C 12.763 13.262 13.237 13.262 13.53 12.97 L 17 9.5 M 13 0 L 13 12"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="members" viewBox="0 0 20 20">
+      <path
+        d="M 10 1.667 C 12.531 1.667 14.583 3.719 14.583 6.25 C 14.583 8.781 12.531 10.833 10 10.833 C 7.469 10.833 5.417 8.781 5.417 6.25 C 5.417 3.719 7.469 1.667 10 1.667 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+      <path
+        d="M 3.518 18.518 C 5.176 16.86 7.469 15.833 10 15.833 C 12.531 15.833 14.824 16.86 16.482 18.518"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="badge" viewBox="0 0 20 20">
+      <path
+        d="M 9.351 1.553 C 9.725 1.234 10.275 1.234 10.649 1.553 L 12.509 3.138 C 12.669 3.275 12.868 3.357 13.078 3.374 L 15.514 3.568 C 16.004 3.607 16.393 3.996 16.432 4.486 L 16.626 6.922 C 16.643 7.132 16.725 7.331 16.862 7.491 L 18.447 9.351 C 18.766 9.725 18.766 10.275 18.447 10.649 L 16.862 12.509 C 16.725 12.669 16.643 12.868 16.626 13.078 L 16.432 15.514 C 16.393 16.004 16.004 16.393 15.514 16.432 L 13.078 16.626 C 12.868 16.643 12.669 16.725 12.509 16.862 L 10.649 18.447 C 10.275 18.766 9.725 18.766 9.351 18.447 L 7.491 16.862 C 7.331 16.725 7.132 16.643 6.922 16.626 L 4.486 16.432 C 3.996 16.393 3.607 16.004 3.568 15.514 L 3.374 13.078 C 3.357 12.868 3.275 12.669 3.138 12.509 L 1.553 10.649 C 1.234 10.275 1.234 9.725 1.553 9.351 L 3.138 7.491 C 3.275 7.331 3.357 7.132 3.374 6.922 L 3.568 4.486 C 3.607 3.996 3.996 3.607 4.486 3.568 L 6.922 3.374 C 7.132 3.357 7.331 3.275 7.491 3.138 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+      </path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="calendar" viewBox="0 0 20 20">
+      <path
+        d="M 2 8 C 2 6.343 3.343 5 5 5 L 10 5 L 15 5 C 16.657 5 18 6.343 18 8 L 18 15 C 18 16.657 16.657 18 15 18 L 5 18 C 3.343 18 2 16.657 2 15 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor">
+      </path>
+      <path
+        d="M 6 2 L 6 4.5"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round">
+      </path>
+      <path
+        d="M 14 2 L 14 4.5"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke-width="2"
+        stroke="currentColor"
+        stroke-linecap="round">
+      </path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="contests" viewBox="0 0 20 20">
+      <path
+        d="M 9.833 1.694 L 13.007 6.323 L 18.394 7.912 L 14.969 12.362 L 15.123 17.974 L 9.833 16.094 L 4.544 17.974 L 4.698 12.362 L 1.273 7.912 L 6.66 6.323 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="publish" viewBox="0 0 19.5 19.5" fill="none">
+      <path d="M 4.75 9.5 L 9.043 5.207 C 9.433 4.817 10.067 4.817 10.457 5.207 L 14.75 9.5"
+        fill="transparent" stroke-width="1.5" stroke="var(--icon-stroke, currentColor)"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path d="M 9.75 6.253 L 9.75 14.753" fill="transparent" stroke-width="1.5"
+        stroke="var(--icon-stroke, currentColor)" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="complete" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 8.761 1 11 3.239 11 6 C 11 8.761 8.761 11 6 11 C 3.239 11 1 8.761 1 6 C 1 3.239 3.239 1 6 1 Z"
+        fill="var(--icon-fill, currentColor)" fill-opacity="var(--icon-fill-opacity, 0.15)"
+        stroke="var(--icon-stroke, currentColor)" stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path d="M 4.25 6.25 L 5.323 7.323 C 5.421 7.421 5.579 7.421 5.677 7.323 L 8 5"
+        fill="transparent" stroke-width="1.25" stroke="var(--icon-stroke, currentColor)"
+        stroke-linecap="round"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="formDetails" viewBox="0 0 20 20" fill="none">
+      <path
+        d="M 4 10 C 4 7.653 5.903 5.75 8.25 5.75 L 11.75 5.75 C 14.097 5.75 16 7.653 16 10 L 16 10 C 16 12.347 14.097 14.25 11.75 14.25 L 8.25 14.25 C 5.903 14.25 4 12.347 4 10 Z"
+        fill="var(--icon-fill, currentColor)" fill-opacity="var(--icon-fill-opacity, 0.15)"
+        stroke-width="1.5" stroke="var(--icon-stroke, currentColor)"></path>
+      <path
+        d="M 8.25 8.25 C 9.216 8.25 10 9.034 10 10 C 10 10.966 9.216 11.75 8.25 11.75 C 7.284 11.75 6.5 10.966 6.5 10 C 6.5 9.034 7.284 8.25 8.25 8.25 Z"
+        fill="var(--icon-fill, currentColor)"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="formDescription" viewBox="0 0 20 20" fill="none">
+      <path
+        d="M 5.25 11.83 C 5.25 11.459 5.398 11.102 5.66 10.84 L 10.75 5.75 C 11.716 4.784 13.284 4.784 14.25 5.75 L 14.25 5.75 C 15.216 6.716 15.216 8.284 14.25 9.25 L 9.16 14.34 C 8.898 14.602 8.541 14.75 8.17 14.75 L 5.25 14.75 Z"
+        fill="var(--icon-fill, currentColor)" fill-opacity="var(--icon-fill-opacity, 0.15)"
+        stroke-width="1.5" stroke="var(--icon-stroke, currentColor)"
+        stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="formMedia" viewBox="0 0 20 20" fill="none">
+      <path
+        d="M 6.5 5.689 C 6.5 5.168 7.07 4.848 7.514 5.12 L 14.569 9.431 C 14.995 9.691 14.995 10.309 14.569 10.569 L 7.514 14.88 C 7.07 15.152 6.5 14.832 6.5 14.311 Z"
+        fill="var(--icon-fill, currentColor)" fill-opacity="var(--icon-fill-opacity, 0.15)"
+        stroke-width="1.5" stroke="var(--icon-stroke, currentColor)"
+        stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+  </defs>
+
+  <defs>
+    <symbol id="zap-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 5.328 0.949 C 5.597 0.527 6.25 0.717 6.25 1.217 L 6.25 4.25 L 9.77 4.25 C 10.303 4.25 10.626 4.838 10.34 5.287 L 6.672 11.051 C 6.403 11.473 5.75 11.283 5.75 10.783 L 5.75 7.75 L 2.23 7.75 C 1.697 7.75 1.374 7.162 1.66 6.713 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="activity-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M.75 6h1.083a1 1 0 0 0 .923-.615l1.575-3.78c.193-.463.872-.385.955.11l1.428 8.57c.083.495.762.573.955.11l1.575-3.78A1 1 0 0 1 10.167 6h1.083"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="gallery-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 0 5.5 C 0 6.605 0.895 7.5 2 7.5 L 7.5 7.5 C 8.605 7.5 9.5 6.605 9.5 5.5 L 9.5 2 C 9.5 0.895 8.605 0 7.5 0 L 2 0 C 0.895 0 0 0.895 0 2 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        height="7.5px"
+        id="bSqEES2pz"
+        stroke-dasharray="0"
+        stroke-linecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="4"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(1.25 0.75)"
+        width="9.5px"
+      ></path>
+      <path
+        d="M 5 0 L 0 0"
+        fill="transparent"
+        height="1px"
+        id="kZPmbJYmP"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(3.5 11.25)"
+        width="5px"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="members-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 7.519 1 8.75 2.231 8.75 3.75 C 8.75 5.269 7.519 6.5 6 6.5 C 4.481 6.5 3.25 5.269 3.25 3.75 C 3.25 2.231 4.481 1 6 1 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 2.111 11.111 C 3.106 10.116 4.481 9.5 6 9.5 C 7.519 9.5 8.894 10.116 9.889 11.111"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="marketplace-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 0 2.5 C 0 1.119 1.119 0 2.5 0 L 7 0 C 8.381 0 9.5 1.119 9.5 2.5 L 9.5 7 C 9.5 8.381 8.381 9.5 7 9.5 L 2.5 9.5 C 1.119 9.5 0 8.381 0 7 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        height="9.5px"
+        id="S1jMnHc0G"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(1.25 1.25)"
+        width="9.5px"
+      ></path>
+      <path
+        d="M 4 0 C 4 1.105 3.105 1.75 2 1.75 C 0.895 1.75 0 1.105 0 0"
+        fill="transparent"
+        height="1.75px"
+        id="nfM_2Ksyg"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(4 4)"
+        width="4px"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="triangle-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 5.148 1.884 C 5.539 1.249 6.461 1.249 6.852 1.884 L 11.062 8.726 C 11.472 9.392 10.993 10.25 10.21 10.25 L 1.79 10.25 C 1.007 10.25 0.528 9.392 0.938 8.726 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="component-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        d="M4.586 1.354a2 2 0 0 1 2.828 0l3.232 3.232a2 2 0 0 1 0 2.828l-3.232 3.232a2 2 0 0 1-2.828 0L1.354 7.414a2 2 0 0 1 0-2.828Z"
+      />
+      <path fill="transparent" stroke="currentColor" d="m3 3 6 6M9 3 3 9" />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="card-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 4.25 C 1.25 3.145 2.145 2.25 3.25 2.25 L 8.75 2.25 C 9.855 2.25 10.75 3.145 10.75 4.25 L 10.75 8.25 C 10.75 9.355 9.855 10.25 8.75 10.25 L 3.25 10.25 C 2.145 10.25 1.25 9.355 1.25 8.25 Z"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 1.25 4.25 C 1.25 3.145 2.145 2.25 3.25 2.25 L 8.75 2.25 C 9.855 2.25 10.75 3.145 10.75 4.25 L 10.75 5.5 L 1.25 5.5 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="search-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        d="M5.299.5a5 5 0 0 1 4.416 7.345.75.75 0 0 0 .127.887l1.621 1.622a.749.749 0 1 1-1.06 1.06L8.851 9.862a.75.75 0 0 0-.925-.107A5.001 5.001 0 1 1 5.299.5m-3.5 5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0"
+      />
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        d="M5.25 1.5a4 4 0 1 1 0 8 4 4 0 0 1 0-8"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="check-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="m1.5 5.75 2.293 2.293a1 1 0 0 0 1.414 0L10 3.25"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="dot-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 4 C 7.105 4 8 4.895 8 6 C 8 7.105 7.105 8 6 8 C 4.895 8 4 7.105 4 6 C 4 4.895 4.895 4 6 4 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="dots-12" viewBox="0 0 12 12" fill="none">
+      <circle cx="1.5" cy="6" r="1.25" fill="currentColor"></circle>
+      <circle cx="6" cy="6" r="1.25" fill="currentColor"></circle>
+      <circle cx="10.5" cy="6" r="1.25" fill="currentColor"></circle>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="repost-12" viewBox="0 0 12 12" fill="none">
+      <g transform="translate(1.75 6.75)">
+        <path
+          d="M 2.25 0 L 0 2.25 L 2.25 4.5"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 0.25 2.25 C 0.25 2.25 4.156 2.25 6.25 2.25 C 8.719 2.25 8.5 0 8.5 0"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+      <g transform="translate(1.75 0.75)">
+        <path
+          d="M 6.255 4.5 L 8.505 2.25 L 6.255 0"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 8.255 2.25 C 8.255 2.25 4.349 2.25 2.255 2.25 C -0.214 2.25 0.005 4.5 0.005 4.5"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="link-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 5 7 L 7 5"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 4.75 2.279 C 5.386 1.643 6.265 1.25 7.235 1.25 C 9.176 1.25 10.75 2.824 10.75 4.765 C 10.75 5.735 10.357 6.614 9.721 7.25"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 7.25 9.721 C 6.614 10.357 5.735 10.75 4.765 10.75 C 2.824 10.75 1.25 9.176 1.25 7.235 C 1.25 6.265 1.643 5.386 2.279 4.75"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="bold-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 2.75 2.25 C 2.75 1.974 2.974 1.75 3.25 1.75 L 6.25 1.75 C 7.355 1.75 8.25 2.645 8.25 3.75 L 8.25 3.75 C 8.25 4.855 7.355 5.75 6.25 5.75 L 2.75 5.75 L 7 5.75 C 8.243 5.75 9.25 6.757 9.25 8 L 9.25 8 C 9.25 9.243 8.243 10.25 7 10.25 L 3.341 10.25 C 3.015 10.25 2.75 9.985 2.75 9.659 Z"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="italic-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 4.75 1.75 L 9.25 1.75"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 7.25 10.25 L 2.75 10.25"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 7 2 L 5 9.5"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="code-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 3.5 3 L 1.207 5.293 C 0.817 5.683 0.817 6.317 1.207 6.707 L 3.5 9"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 8.5 3 L 10.793 5.293 C 11.183 5.683 11.183 6.317 10.793 6.707 L 8.5 9"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="image-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 3.25 C 1.25 2.145 2.145 1.25 3.25 1.25 L 8.75 1.25 C 9.855 1.25 10.75 2.145 10.75 3.25 L 10.75 8.75 C 10.75 9.855 9.855 10.75 8.75 10.75 L 3.25 10.75 C 2.145 10.75 1.25 9.855 1.25 8.75 Z"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 1.848 7.56 C 4.317 5.74 7.683 5.74 10.152 7.56 L 10.75 8 L 10.75 8.75 C 10.75 9.855 9.855 10.75 8.75 10.75 L 3.25 10.75 C 2.145 10.75 1.25 9.855 1.25 8.75 L 1.25 8 Z"
+        fill="rgb(255 255 255 / 20%)"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="hype-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 0 0 L 0 9"
+        fill="transparent"
+        height="9px"
+        id="hGh6M4iDt"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(7.75 1.5)"
+        width="1px"
+      ></path>
+      <path
+        d="M 0 0 L 0 9"
+        fill="transparent"
+        height="9px"
+        id="mZpLGwC79"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(4.25 1.5)"
+        width="1px"
+      ></path>
+      <path
+        d="M 0 0 L 0 3"
+        fill="transparent"
+        height="3px"
+        id="KZPZlVE2f"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(0.75 4.5)"
+        width="1px"
+      ></path>
+      <path
+        d="M 0 0 L 0 3"
+        fill="transparent"
+        height="3px"
+        id="XInLygsda"
+        stroke-dasharray="0"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        stroke="currentColor"
+        transform="translate(11.25 4.5)"
+        width="1px"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeSearch-12" viewBox="0 0 12 12">
+      <path
+        d="M 5 0 C 7.761 0 10 2.239 10 5 C 10 6.046 9.679 7.017 9.13 7.819 L 11.164 9.854 C 11.457 10.146 11.457 10.621 11.164 10.914 C 10.871 11.207 10.396 11.207 10.104 10.914 L 8.107 8.918 C 7.254 9.595 6.174 10 5 10 C 2.239 10 0 7.761 0 5 C 0 2.239 2.239 0 5 0 Z M 1.5 5 C 1.5 6.933 3.067 8.5 5 8.5 C 6.933 8.5 8.5 6.933 8.5 5 C 8.5 3.067 6.933 1.5 5 1.5 C 3.067 1.5 1.5 3.067 1.5 5 Z"
+        fill="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nativeFolder-12" viewBox="0 0 12 12" overflow="visible">
+      <path
+        d="M 1.25 8.75 C 1.25 9.855 2.145 10.75 3.25 10.75 L 8.75 10.75 C 9.855 10.75 10.75 9.855 10.75 8.75 L 10.75 5.75 C 10.75 4.645 9.855 3.75 8.75 3.75 L 3.25 3.75 C 2.145 3.75 1.25 4.645 1.25 5.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+      <path
+        d="M 1.25 5.25 L 1.25 2.25 C 1.25 1.422 1.922 0.75 2.75 0.75 L 5.25 0.75 C 6.078 0.75 6.75 1.422 6.75 2.25 L 6.75 3.5"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        vector-effect="non-scaling-stroke"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="complete-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 8.761 1 11 3.239 11 6 C 11 8.761 8.761 11 6 11 C 3.239 11 1 8.761 1 6 C 1 3.239 3.239 1 6 1 Z"
+        fill="var(--icon-fill, currentColor)" fill-opacity="var(--icon-fill-opacity, 0.15)"
+        stroke="var(--icon-stroke, currentColor)" stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path d="M 4.25 6.25 L 5.323 7.323 C 5.421 7.421 5.579 7.421 5.677 7.323 L 8 5"
+        fill="transparent" stroke-width="1.25" stroke="var(--icon-stroke, currentColor)"
+        stroke-linecap="round"></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="caretDown-8" viewBox="0 0 8 8" fill="none">
+      <path
+        d="M 0 6 L 2.293 3.707 C 2.683 3.317 2.683 2.683 2.293 2.293 L 0 0"
+        transform="translate(2.5 1) rotate(90 1.5 3)"
+        fill="transparent"
+        stroke-width="1.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="heart-16" viewBox="0 0 16 16" fill="none">
+      <path
+        d="M 4.706 1.75 C 6.455 1.75 7.681 2.984 8 4.645 C 8.319 2.984 9.545 1.75 11.294 1.75 C 13.341 1.75 15 3.44 15 5.524 C 15 11.802 8 14.75 8 14.75 L 8 14.75 L 8 14.75 C 8 14.75 1 11.802 1 5.524 C 1 3.44 2.659 1.75 4.706 1.75 Z"
+        fill="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="
+          fill-opacity: var(--icon-fill-opacity, 0.15);
+          stroke: var(--icon-stroke, currentColor);
+        "
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="comment-16" viewBox="0 0 16 16" fill="none">
+      <path
+        d="M 8 1.75 C 11.452 1.75 14.25 4.548 14.25 8 C 14.25 11.452 11.452 14.25 8 14.25 L 3.313 14.25 C 2.45 14.25 1.75 13.55 1.75 12.688 L 1.75 8 C 1.75 4.548 4.548 1.75 8 1.75 Z"
+        fill="currentColor"
+        stroke-width="1.5"
+        style="
+          fill-opacity: var(--icon-fill-opacity, 0.15);
+          stroke: var(--icon-stroke, currentColor);
+        "
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="repost-16" viewBox="0 0 16 16" fill="none">
+      <g transform="translate(1.75 0.75)">
+        <path
+          d="M 9.5 0 L 12.396 2.896 C 12.592 3.092 12.592 3.408 12.396 3.604 L 9.5 6.5"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 11.75 3.25 L 2.25 3.25 C 1.007 3.25 0 4.257 0 5.5 L 0 5.5"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+      <g transform="translate(1.707 8.75) rotate(-180 6.25 3.25)">
+        <path
+          d="M 9.5 0 L 12.396 2.896 C 12.592 3.092 12.592 3.408 12.396 3.604 L 9.5 6.5"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M 11.75 3.25 L 2.25 3.25 C 1.007 3.25 0 4.257 0 5.5 L 0 5.5"
+          fill="transparent"
+          stroke-width="1.5"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="bell-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M1 10.25h10"
+      />
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M1.75 6.25A4.25 4.25 0 0 1 6 2h0a4.25 4.25 0 0 1 4.25 4.25v1h-8.5Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="polygon-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 5.293 1.05 C 5.683 0.66 6.317 0.66 6.707 1.05 L 10.95 5.293 C 11.34 5.683 11.34 6.317 10.95 6.707 L 6.707 10.95 C 6.317 11.34 5.683 11.34 5.293 10.95 L 1.05 6.707 C 0.66 6.317 0.66 5.683 1.05 5.293 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="ovalDashed-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 8.761 1 11 3.239 11 6 C 11 8.761 8.761 11 6 11 C 3.239 11 1 8.761 1 6 C 1 3.239 3.239 1 6 1 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="medal-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1 10.25 L 11 10.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 1.75 6.25 C 1.75 3.903 3.653 2 6 2 C 8.347 2 10.25 3.903 10.25 6.25 L 10.25 7.25 L 1.75 7.25 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="collection-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 7.105 1 8 1.895 8 3 C 8 4.105 7.105 5 6 5 C 4.895 5 4 4.105 4 3 C 4 1.895 4.895 1 6 1 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 2.75 7 C 3.855 7 4.75 7.895 4.75 9 C 4.75 10.105 3.855 11 2.75 11 C 1.645 11 0.75 10.105 0.75 9 C 0.75 7.895 1.645 7 2.75 7 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 9.25 7 C 10.355 7 11.25 7.895 11.25 9 C 11.25 10.105 10.355 11 9.25 11 C 8.145 11 7.25 10.105 7.25 9 C 7.25 7.895 8.145 7 9.25 7 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="images-12" viewBox="0 0 12 12" fill="none">
+      <g transform="translate(1 0.75)">
+        <path
+          d="M 3.25 1.5 C 3.25 0.672 3.922 0 4.75 0 L 8.75 0 C 9.578 0 10.25 0.672 10.25 1.5 L 10.25 5.5 C 10.25 6.328 9.578 7 8.75 7 L 4.75 7 C 3.922 7 3.25 6.328 3.25 5.5 Z"
+          fill="currentColor"
+          style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+        <path
+          d="M 7 7 L 7 9 C 7 9.828 6.328 10.5 5.5 10.5 L 1.5 10.5 C 0.672 10.5 0 9.828 0 9 L 0 5 C 0 4.172 0.672 3.5 1.5 3.5 L 3.25 3.5"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="text-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6.25 2.25 L 6.25 10"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 2 2.25 L 10.5 2.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="shader-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 9.182 9.932 A 4.5 4.5 0 0 1 2.818 3.568 L 5.293 1.093 A 1 1 0 0 1 6.707 1.093 L 9.182 3.568 A 4.5 4.5 0 0 1 9.182 9.932 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="button-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 4.25 C 1.25 3.145 2.145 2.25 3.25 2.25 L 8.75 2.25 C 9.855 2.25 10.75 3.145 10.75 4.25 L 10.75 7.75 C 10.75 8.855 9.855 9.75 8.75 9.75 L 3.25 9.75 C 2.145 9.75 1.25 8.855 1.25 7.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="oval-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 9 0.75 C 10.243 0.75 11.25 1.757 11.25 3 C 11.25 4.243 10.243 5.25 9 5.25 C 7.757 5.25 6.75 4.243 6.75 3 C 6.75 1.757 7.757 0.75 9 0.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 3 6.75 C 4.243 6.75 5.25 7.757 5.25 9 C 5.25 10.243 4.243 11.25 3 11.25 C 1.757 11.25 0.75 10.243 0.75 9 C 0.75 7.757 1.757 6.75 3 6.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 4.5 7.5 L 6 6 L 7.5 4.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="page-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.75 2.75 C 1.75 1.645 2.645 0.75 3.75 0.75 L 4.75 0.75 C 5.302 0.75 5.75 1.198 5.75 1.75 L 5.75 4.25 C 5.75 4.802 6.198 5.25 6.75 5.25 L 9.25 5.25 C 9.802 5.25 10.25 5.698 10.25 6.25 L 10.25 9.25 C 10.25 10.355 9.355 11.25 8.25 11.25 L 3.75 11.25 C 2.645 11.25 1.75 10.355 1.75 9.25 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 4.5 0.75 L 5.672 0.75 C 6.202 0.75 6.711 0.961 7.086 1.336 L 9.664 3.914 C 10.039 4.289 10.25 4.798 10.25 5.328 L 10.25 6.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="cms-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.5 8.75 C 1.5 8.75 1.5 4.631 1.5 3.25 C 1.5 1.869 3.515 0.75 6 0.75 C 8.485 0.75 10.5 1.869 10.5 3.25 C 10.5 3.595 10.5 8.75 10.5 8.75 M 10.5 8.75 C 10.5 10.131 8.485 11.25 6 11.25 C 3.515 11.25 1.5 10.131 1.5 8.75"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 10.25 3.25 C 10.25 4.355 8.347 5.25 6 5.25 C 3.653 5.25 1.75 4.355 1.75 3.25"
+        fill="transparent"
+        stroke="currentColor"
+      ></path>
+      <path
+        d="M 10.25 6 C 10.25 7.105 8.347 8 6 8 C 3.653 8 1.75 7.105 1.75 6"
+        fill="transparent"
+        stroke="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="carrot-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.75 10.25 C 1.32 9.82 1.271 9.138 1.636 8.651 L 5.515 3.48 C 6.299 2.435 7.826 2.326 8.75 3.25 L 8.75 3.25 C 9.674 4.174 9.565 5.701 8.52 6.485 L 3.349 10.364 C 2.862 10.729 2.18 10.68 1.75 10.25 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 10.5 1.5 L 11 1"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="template-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 3.5 C 1.25 2.257 2.257 1.25 3.5 1.25 L 8.5 1.25 C 9.743 1.25 10.75 2.257 10.75 3.5 L 10.75 8.5 C 10.75 9.743 9.743 10.75 8.5 10.75 L 3.5 10.75 C 2.257 10.75 1.25 9.743 1.25 8.5 Z"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      />
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M 10 1.5 L 2.5 1.5 L 1.5 2.5 L 1.5 4.5 L 11 4.5 L 11 3.5 Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="home-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1 5.442 C 1 4.531 1.414 3.669 2.126 3.099 L 4.126 1.499 C 5.222 0.623 6.778 0.623 7.874 1.499 L 9.874 3.099 C 10.586 3.669 11 4.531 11 5.442 L 11 8 C 11 9.657 9.657 11 8 11 L 4 11 C 2.343 11 1 9.657 1 8 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 6 10.5 L 6 8"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="phone-12" viewBox="0 0 12 12" fill="none">
+      <g transform="translate(1 0)">
+        <path
+          d="M 1 1 L 9 1 L 9 11 L 1 11 Z"
+          fill="currentColor"
+          style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        ></path>
+        <path
+          d="M 0 2.5 C 0 1.119 1.119 0 2.5 0 L 7.5 0 C 8.881 0 10 1.119 10 2.5 L 10 9.5 C 10 10.881 8.881 12 7.5 12 L 2.5 12 C 1.119 12 0 10.881 0 9.5 Z M 1.5 9.5 C 1.5 10.052 1.948 10.5 2.5 10.5 L 7.5 10.5 C 8.052 10.5 8.5 10.052 8.5 9.5 L 8.5 2.5 C 8.5 1.948 8.052 1.5 7.5 1.5 L 2.5 1.5 C 1.948 1.5 1.5 1.948 1.5 2.5 Z"
+          fill="currentColor"
+        ></path>
+      </g>
+      <path
+        d="M 4.5 8.5 L 7.5 8.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="presentation-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 6.25 C 1.25 7.355 2.145 8.25 3.25 8.25 L 8.75 8.25 C 9.855 8.25 10.75 7.355 10.75 6.25 L 10.75 2.75 C 10.75 1.645 9.855 0.75 8.75 0.75 L 3.25 0.75 C 2.145 0.75 1.25 1.645 1.25 2.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 6 8.5 L 3.75 11.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 6 8.5 L 8.25 11.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="pen-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 7.83 C 1.25 7.459 1.398 7.102 1.66 6.84 L 6.75 1.75 C 7.716 0.784 9.284 0.784 10.25 1.75 L 10.25 1.75 C 11.216 2.716 11.216 4.284 10.25 5.25 L 5.16 10.34 C 4.898 10.602 4.541 10.75 4.17 10.75 L 1.25 10.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="tree-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6.2 1 C 7.857 1 9.2 2.343 9.2 4 C 9.2 4.031 9.2 4.062 9.199 4.093 C 10.068 4.359 10.7 5.168 10.7 6.125 C 10.7 7.299 9.749 8.25 8.575 8.25 L 3.325 8.25 C 2.151 8.25 1.2 7.299 1.2 6.125 C 1.2 4.993 2.085 4.068 3.2 4.004 C 3.2 4.002 3.2 4.001 3.2 4 C 3.2 2.343 4.543 1 6.2 1 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 6 8.4 L 6 10.8"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="flag-12" viewBox="0 0 12 12" fill="none">
+      <g transform="translate(1.75 0.75)">
+        <path
+          d="M 0 1.75 L 0 10.5"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+        <path
+          d="M 5.75 1.25 C 4.5 1.25 3.5 0 2 0 C 1 0 0.333 0.25 0 0.75 L 0 8 C 0.5 7.5 1.167 7 2 7 C 3.25 7 4.5 8.5 5.75 8.5 C 6.583 8.5 7.333 8.167 8 7.5 L 8 0.25 C 7.333 0.917 6.583 1.25 5.75 1.25 Z"
+          fill="currentColor"
+          style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="religiousCross-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 4.25 1.75 C 4.25 1.198 4.698 0.75 5.25 0.75 L 6.75 0.75 C 7.302 0.75 7.75 1.198 7.75 1.75 L 7.75 3.118 L 9.25 3.118 C 9.802 3.118 10.25 3.566 10.25 4.118 L 10.25 5.75 C 10.25 6.302 9.802 6.75 9.25 6.75 L 7.75 6.75 L 7.75 10.25 C 7.75 10.802 7.302 11.25 6.75 11.25 L 5.25 11.25 C 4.698 11.25 4.25 10.802 4.25 10.25 L 4.25 6.75 L 2.75 6.75 C 2.198 6.75 1.75 6.302 1.75 5.75 L 1.75 4.118 C 1.75 3.566 2.198 3.118 2.75 3.118 L 4.25 3.118 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="chat-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M5.75.75a5 5 0 0 1 0 10h-3a2 2 0 0 1-2-2v-3a5 5 0 0 1 5-5"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="diamond-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M5.293 1.05a1 1 0 0 1 1.414 0l4.243 4.243a1 1 0 0 1 0 1.414L6.707 10.95a1 1 0 0 1-1.414 0L1.05 6.707a1 1 0 0 1 0-1.414Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="smile-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 3.75 2 L 3.75 4.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 8.25 2 L 8.25 4.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 1 8 C 1 8 2.25 10.5 6 10.5 C 9.75 10.5 11 8 11 8"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="form-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 3.25 C 1.25 2.145 2.145 1.25 3.25 1.25 L 8.75 1.25 C 9.855 1.25 10.75 2.145 10.75 3.25 L 10.75 8.75 C 10.75 9.855 9.855 10.75 8.75 10.75 L 3.25 10.75 C 2.145 10.75 1.25 9.855 1.25 8.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 4.5 4.5 L 7.5 4.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+      <path
+        d="M 4.5 7.5 L 7.5 7.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="hanger-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 5.308 5.163 C 5.695 4.792 6.305 4.792 6.692 5.163 L 10.203 8.528 C 10.854 9.152 10.412 10.25 9.511 10.25 L 2.489 10.25 C 1.588 10.25 1.146 9.152 1.797 8.528 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 5.5 5 L 7.03 3.47 C 7.582 2.918 7.631 2.039 7.143 1.429 L 7.143 1.429 C 6.533 0.666 5.396 0.604 4.706 1.294 L 4 2"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="shapes-12" viewBox="0 0 12 12" fill="none">
+      <g transform="translate(1 0.75)">
+        <path
+          d="M 3.25 1.5 C 3.25 0.672 3.922 0 4.75 0 L 8.75 0 C 9.578 0 10.25 0.672 10.25 1.5 L 10.25 5.5 C 10.25 6.328 9.578 7 8.75 7 L 4.75 7 C 3.922 7 3.25 6.328 3.25 5.5 Z"
+          fill="currentColor"
+          style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+        <path
+          d="M 7 7 L 7 7 C 7 8.933 5.433 10.5 3.5 10.5 L 3.5 10.5 C 1.567 10.5 0 8.933 0 7 L 0 6.75 C 0 4.955 1.455 3.5 3.25 3.5 L 3.25 3.5"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="chair-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 8.25 C 1.25 8.802 1.698 9.25 2.25 9.25 L 9.75 9.25 C 10.302 9.25 10.75 8.802 10.75 8.25 L 10.75 7.25 C 10.75 6.698 10.302 6.25 9.75 6.25 L 2.25 6.25 C 1.698 6.25 1.25 6.698 1.25 7.25 Z"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 3 6.25 L 9 6.25 L 9 3 C 9 1.895 8.105 1 7 1 L 5 1 C 3.895 1 3 1.895 3 3 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 7.75 9.75 L 7.75 11.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 4.25 9.75 L 4.25 11.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="transition-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 10.75 C 4.25 10.75 5.25 8.25 6 6 C 6.75 3.75 7.75 1.25 10.75 1.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="contrast-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 8.5 6 C 8.5 7.381 7.381 8.5 6 8.5 L 6 3.5 C 7.381 3.5 8.5 4.619 8.5 6 Z"
+        fill="currentColor"
+      ></path>
+      <path
+        d="M 5 0 C 7.761 0 10 2.239 10 5 C 10 7.761 7.761 10 5 10 C 2.239 10 0 7.761 0 5 C 0 2.239 2.239 0 5 0 Z"
+        transform="translate(1 1) rotate(-45 5 5)"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="color-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 9 4.5 C 9 6.985 6.985 9 4.5 9 C 2.015 9 0 6.985 0 4.5 L 0 1 C 0 0.448 0.448 0 1 0 L 4.5 0 C 6.985 0 9 2.015 9 4.5 Z"
+        transform="translate(1.5 2.25) rotate(45 4.5 4.5)"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="stack-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 3.25 C 1.25 2.145 2.145 1.25 3.25 1.25 L 8.75 1.25 C 9.855 1.25 10.75 2.145 10.75 3.25 L 10.75 8.75 C 10.75 9.855 9.855 10.75 8.75 10.75 L 3.25 10.75 C 2.145 10.75 1.25 9.855 1.25 8.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 1.5 6 L 10.5 6"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="toggle-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        d="M.75 6.25a4 4 0 0 1 4-4h2.5a4 4 0 0 1 0 8h-2.5a4 4 0 0 1-4-4Z"
+      />
+      <path
+        fill="currentColor"
+        d="M4.75 4.75a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 4.75 4.75"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="arrows-12" viewBox="0 0 12 12" fill="none">
+      <g transform="translate(1.75 2)">
+        <path
+          d="M 0 0 L 4 4 L 0 8"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+        <path
+          d="M 5.5 0 L 8.086 2.586 C 8.867 3.367 8.867 4.633 8.086 5.414 L 5.5 8"
+          fill="transparent"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        ></path>
+      </g>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="arrow-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 2 2 L 4.939 4.939 A 1.5 1.5 0 0 1 4.939 7.061 L 2 10 M 7.5 2 L 10.439 4.939 A 1.5 1.5 0 0 1 10.439 7.061 L 7.5 10"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="chart-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.5 8.75 C 1.5 8.75 1.5 4.631 1.5 3.25 C 1.5 1.869 3.515 0.75 6 0.75 C 8.485 0.75 10.5 1.869 10.5 3.25 C 10.5 3.595 10.5 8.75 10.5 8.75 M 10.5 8.75 C 10.5 10.131 8.485 11.25 6 11.25 C 3.515 11.25 1.5 10.131 1.5 8.75"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 10.25 3.25 C 10.25 4.355 8.347 5.25 6 5.25 C 3.653 5.25 1.75 4.355 1.75 3.25"
+        fill="transparent"
+        stroke="currentColor"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="star-12" viewBox="0 0 12 12" fill="none">
+      <path fill="transparent" d="M0 0h12v12H0Z" />
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="m5.9 1.016 1.904 2.778 3.232.953-2.055 2.67.093 3.367L5.9 9.656l-3.174 1.128.093-3.367-2.055-2.67 3.232-.953Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="sparkle-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M4.706 1.706C4.881 1.138 5.406.75 6 .75h0c.594 0 1.119.388 1.294.956l.581 1.889a.8.8 0 0 0 .53.53l1.889.581c.568.175.956.7.956 1.294h0c0 .594-.388 1.119-.956 1.294l-1.889.581a.8.8 0 0 0-.53.53l-.581 1.889c-.175.568-.7.956-1.294.956h0a1.355 1.355 0 0 1-1.294-.956l-.581-1.889a.8.8 0 0 0-.53-.53l-1.889-.581A1.355 1.355 0 0 1 .75 6h0c0-.594.388-1.119.956-1.294l1.889-.581a.8.8 0 0 0 .53-.53Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="moon-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M10.981 7.049a.41.41 0 0 0-.396-.289l-.112.02a4.272 4.272 0 0 1-5.251-5.257a.3.3 0 0 0 .015-.091.4.4 0 0 0-.524-.412 5.086 5.086 0 0 0 .911 9.959 5.084 5.084 0 0 0 5.357-3.696.37.37 0 0 0 0-.234"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="sun-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 8.761 1 11 3.239 11 6 C 11 8.761 8.761 11 6 11 C 3.239 11 1 8.761 1 6 C 1 3.239 3.239 1 6 1 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 4 6 C 4 4.895 4.895 4 6 4"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="grid-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M1.25 3.25a2 2 0 0 1 2-2h5.5a2 2 0 0 1 2 2v5.5a2 2 0 0 1-2 2h-5.5a2 2 0 0 1-2-2Z"
+      />
+      <path fill="transparent" stroke="currentColor" d="M6 1.5v9M1.5 6h9" />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="folder-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 4.25 2.25 C 4.25 1.422 4.922 0.75 5.75 0.75 L 9.75 0.75 C 10.578 0.75 11.25 1.422 11.25 2.25 L 11.25 6.25 C 11.25 7.078 10.578 7.75 9.75 7.75 L 5.75 7.75 C 4.922 7.75 4.25 7.078 4.25 6.25 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 8 7.75 L 8 9.75 C 8 10.578 7.328 11.25 6.5 11.25 L 2.5 11.25 C 1.672 11.25 1 10.578 1 9.75 L 1 5.75 C 1 4.922 1.672 4.25 2.5 4.25 L 4.25 4.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="pointer-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.785 1.176 A 0.5 0.5 0 0 0 1.175 1.786 L 3.472 10.682 A 0.5 0.5 0 0 0 4.397 10.792 L 6.621 6.622 L 10.791 4.397 A 0.5 0.5 0 0 0 10.681 3.472 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="computer-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+        d="M1.25 6.25a2 2 0 0 0 2 2h5.5a2 2 0 0 0 2-2v-3.5a2 2 0 0 0-2-2h-5.5a2 2 0 0 0-2 2Z"
+      />
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M8.5 11.25h-5"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="layout-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 3.25 C 1.25 2.145 2.145 1.25 3.25 1.25 L 8.75 1.25 C 9.855 1.25 10.75 2.145 10.75 3.25 L 10.75 8.75 C 10.75 9.855 9.855 10.75 8.75 10.75 L 3.25 10.75 C 2.145 10.75 1.25 9.855 1.25 8.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 6 2 L 6 10"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="sidebar-12" viewBox="0 0 12 12" fill="none">
+      <defs>
+        <clipPath id="b">
+          <use xlink:href="#a" />
+        </clipPath>
+        <path
+          id="a"
+          d="M.5 3.5a3 3 0 0 1 3-3h5a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3h-5a3 3 0 0 1-3-3Z"
+        />
+      </defs>
+      <use
+        xlink:href="#a"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="3"
+        clip-path="url(#b)"
+      />
+      <path
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M1 4a3 3 0 0 1 3-3h1v10H4a3 3 0 0 1-3-3Z"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="suitcase-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 5.75 C 1.25 4.645 2.145 3.75 3.25 3.75 L 8.75 3.75 C 9.855 3.75 10.75 4.645 10.75 5.75 L 10.75 9.25 C 10.75 10.355 9.855 11.25 8.75 11.25 L 3.25 11.25 C 2.145 11.25 1.25 10.355 1.25 9.25 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 3.5 3.5 L 3.5 2.25 A 1.5 1.5 0 0 1 5 0.75 L 7 0.75 A 1.5 1.5 0 0 1 8.5 2.25 L 8.5 3.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="squiggle-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 1.5 L 1.25 9.5 A 1.5 1.5 0 0 0 2.75 11 A 1.5 1.5 0 0 0 4.25 9.5 L 4.25 3 A 1.5 1.5 0 0 1 5.75 1.5 A 1.5 1.5 0 0 1 7.25 3 L 7.25 9.5 A 1.5 1.5 0 0 0 8.75 11 A 1.5 1.5 0 0 0 10.25 9.5 L 10.25 1.5"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="bubbles-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 7.75 7.75 A 3.5 3.5 0 0 1 4.25 11.25 L 1.75 11.25 A 1 1 0 0 1 0.75 10.25 L 0.75 7.75 A 3.5 3.5 0 0 1 4.25 4.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 7.75 0.75 A 3.5 3.5 0 1 0 7.75 7.75 L 10.25 7.75 A 1 1 0 0 0 11.25 6.75 L 11.25 4.25 A 3.5 3.5 0 0 0 7.75 0.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="target-12" viewBox="0 0 12 12" fill="none">
+      <path
+        fill="currentColor"
+        d="M.75 3.75a3 3 0 0 1 3-3h4.5a3 3 0 0 1 3 3v4.5a3 3 0 0 1-3 3h-4.5a3 3 0 0 1-3-3Z"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+      />
+      <path
+        fill="transparent"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M1 4V3a2 2 0 0 1 2-2h1M10.75 4V3a2 2 0 0 0-2-2h-1M10.75 7.75v1a2 2 0 0 1-2 2h-1M1 7.75v1a2 2 0 0 0 2 2h1"
+      />
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="folderTab-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 1.25 4.25 L 1.25 9 C 1.25 9.966 2.034 10.75 3 10.75 L 9 10.75 A 1.75 1.75 0 0 0 10.75 9 L 10.75 5.75 A 1.5 1.5 0 0 0 9.25 4.25 L 8 4.25 A 1 1 0 0 1 7 3.25 L 7 2.75 A 1.5 1.5 0 0 0 5.5 1.25 L 2.75 1.25 A 1.5 1.5 0 0 0 1.25 2.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 8.5 4.25 L 1.5 4.25"
+        fill="transparent"
+        stroke="currentColor"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+  <defs>
+    <symbol id="nodes-12" viewBox="0 0 12 12" fill="none">
+      <path
+        d="M 6 1 C 7.105 1 8 1.895 8 3 C 8 4.105 7.105 5 6 5 C 4.895 5 4 4.105 4 3 C 4 1.895 4.895 1 6 1 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 2.75 6.75 C 3.855 6.75 4.75 7.645 4.75 8.75 C 4.75 9.855 3.855 10.75 2.75 10.75 C 1.645 10.75 0.75 9.855 0.75 8.75 C 0.75 7.645 1.645 6.75 2.75 6.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M 9.25 6.75 C 10.355 6.75 11.25 7.645 11.25 8.75 C 11.25 9.855 10.355 10.75 9.25 10.75 C 8.145 10.75 7.25 9.855 7.25 8.75 C 7.25 7.645 8.145 6.75 9.25 6.75 Z"
+        fill="currentColor"
+        style="fill-opacity: var(--icon-fill-opacity, 0.15)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </symbol>
+  </defs>
+</svg>

@@ -1,0 +1,4 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="dbb2f237-8d48-eb39-13b6-f6a7ebbbbe14")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,317224,t=>{"use strict";var e=t.i(843476),r=t.i(853800),a=t.i(522016);try{var n=window;n._sentryModuleMetadata=n._sentryModuleMetadata||{},n._sentryModuleMetadata[(new n.Error).stack]=Object.assign({},n._sentryModuleMetadata[(new n.Error).stack],{"_sentryBundlerPluginAppKey:framer-creators":!0})}catch(t){}t.s(["LinkButton",0,function({href:t,rel:n,target:o,...s}){return(0,e.jsx)(r.Button,{...s,nativeButton:!1,render:(0,e.jsx)(a.default,{href:t,rel:n,target:o})})}])}]);
+
+//# debugId=dbb2f237-8d48-eb39-13b6-f6a7ebbbbe14
