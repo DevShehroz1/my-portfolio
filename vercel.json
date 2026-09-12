@@ -1,4 +1,7 @@
 {
   "buildCommand": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/", "destination": "/wearestokt.com/index.html" }
+  ]
 }
