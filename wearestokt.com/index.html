@@ -237,6 +237,8 @@
 </style><style>
 /* hide preloader */
 .framer-sdn7wt { display: none !important; }
+/* hide main until patched to prevent flash */
+#main { opacity: 0; transition: opacity 0.25s ease; }
 /* hide Weavy-Bria asterisk overlay */
 .framer-1jdl0ts { display: none !important; }
 /* reduce nav height */
@@ -610,18 +612,19 @@
       var p=document.createElement('p');p.className='tv-footer-name';p.textContent='Tech Venchure';
       wrap.insertBefore(p,wrap.firstChild);
     }
-    document.querySelectorAll('video').forEach(function(v){
-      if(!v.src||!v.src.includes('golf-ball')){
-        v.setAttribute('src','/assets/golf-ball.mp4');
-        v.muted=true;v.loop=true;v.autoplay=true;v.setAttribute('playsinline','');
-        v.load();v.play().catch(function(){});
-      }
-    });
+    var footerVid=document.getElementById('uVrHyXKh9');
+    if(footerVid&&(!footerVid.src||!footerVid.src.includes('golf-ball'))){
+      footerVid.setAttribute('src','/assets/golf-ball.mp4');
+      footerVid.muted=true;footerVid.loop=true;footerVid.autoplay=true;footerVid.setAttribute('playsinline','');
+      footerVid.load();footerVid.play().catch(function(){});
+    }
   }
   // title lock via MutationObserver on <title>
   var tEl = document.querySelector('title');
   if(tEl){ new MutationObserver(function(){ if(document.title!==TITLE) document.title=TITLE; }).observe(tEl,{childList:true,characterData:true,subtree:true}); }
-  [100,500,1000,2000,4000].forEach(function(d){setTimeout(patch,d);});
+  [100,500,1000,2000,4000].forEach(function(d){
+    setTimeout(function(){ patch(); if(d>=500){ var m=document.getElementById('main'); if(m) m.style.opacity='1'; } },d);
+  });
   var obs=new MutationObserver(patch);
   obs.observe(document.body,{childList:true,subtree:true});
 })();
