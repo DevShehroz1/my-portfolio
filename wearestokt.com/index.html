@@ -235,7 +235,35 @@
   background: url('/assets/techvenchure-logo.png') left center / contain no-repeat;
   z-index: 10;
 }
-</style></head>
+</style><script>
+(function(){
+  var replacements = [
+    ['Stōkt Creative Co.', 'TECH VENCHURE CO'],
+    ['Stōkt Creative', 'TECH VENCHURE CO'],
+    ['( WE ARE STŌKT )', 'TECH VENCHURE CO'],
+    ['WE ARE STŌKT', 'TECH VENCHURE CO']
+  ];
+  function replaceInNode(node){
+    if(node.nodeType === 3){
+      var t = node.textContent;
+      for(var i=0;i<replacements.length;i++){
+        t = t.split(replacements[i][0]).join(replacements[i][1]);
+      }
+      if(t !== node.textContent) node.textContent = t;
+    } else if(node.childNodes && node.childNodes.length){
+      node.childNodes.forEach(replaceInNode);
+    }
+  }
+  var obs = new MutationObserver(function(mutations){
+    mutations.forEach(function(m){
+      m.addedNodes.forEach(replaceInNode);
+      if(m.type==='characterData') replaceInNode(m.target);
+    });
+  });
+  obs.observe(document.documentElement,{childList:true,subtree:true,characterData:true});
+  document.addEventListener('DOMContentLoaded',function(){ replaceInNode(document.body); });
+})();
+</script></head>
 <body>
 	<script async src="../events.framer.com/script5e1f?v=2" data-fid="3bd476850f2219e5e1bae82f60cdd792086c8ddbbbb65993a5256405e554d657" data-no-nt></script>
 	<!-- Start of bodyStart -->
