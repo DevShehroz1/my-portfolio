@@ -584,14 +584,33 @@
   });
 })();
 (function(){
-  function patchName(){
+  var TITLE = 'Tech Venchure — AI-Powered Marketing & Brand Growth';
+  function patch(){
+    // title
+    if(document.title !== TITLE) document.title = TITLE;
+    // text nodes
     document.querySelectorAll('.framer-text').forEach(function(el){
-      if(!el.children.length&&el.textContent.includes('Creative Co')){el.textContent='Tech Venchure';}
+      if(el.children.length) return;
+      var t = el.textContent;
+      if(t.includes('Creative Co')) el.textContent = 'Tech Venchure';
+      else if(t.includes('Saint-Sauveur')) el.textContent = 'Jeddah - Saudi Arabia';
+      else if(t.includes('hello@wearestokt')) el.textContent = 'info@techvenchure.com';
+    });
+    // video
+    document.querySelectorAll('video').forEach(function(v){
+      if(!v.src || !v.src.includes('golf-ball')){
+        v.setAttribute('src','/assets/golf-ball.mp4');
+        v.muted=true; v.loop=true; v.autoplay=true; v.setAttribute('playsinline','');
+        v.load(); v.play().catch(function(){});
+      }
     });
   }
-  [100,500,1500,3000].forEach(function(d){setTimeout(patchName,d);});
-  var obs=new MutationObserver(patchName);
-  obs.observe(document.body,{childList:true,characterData:true,subtree:true});
+  // title lock via MutationObserver on <title>
+  var tEl = document.querySelector('title');
+  if(tEl){ new MutationObserver(function(){ if(document.title!==TITLE) document.title=TITLE; }).observe(tEl,{childList:true,characterData:true,subtree:true}); }
+  [100,500,1000,2000,4000].forEach(function(d){setTimeout(patch,d);});
+  var obs=new MutationObserver(patch);
+  obs.observe(document.body,{childList:true,subtree:true});
 })();
 </script></body>
 
