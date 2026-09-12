@@ -237,31 +237,25 @@
 }
 </style><script>
 (function(){
-  var replacements = [
-    ['Stōkt Creative Co.', 'TECH VENCHURE CO'],
-    ['Stōkt Creative', 'TECH VENCHURE CO'],
-    ['( WE ARE STŌKT )', 'TECH VENCHURE CO'],
-    ['WE ARE STŌKT', 'TECH VENCHURE CO']
+  var map = [
+    ['Stōkt Creative Co.','TECH VENCHURE CO'],
+    ['Stōkt Creative','TECH VENCHURE CO'],
+    ['( WE ARE STŌKT )','TECH VENCHURE CO']
   ];
-  function replaceInNode(node){
-    if(node.nodeType === 3){
-      var t = node.textContent;
-      for(var i=0;i<replacements.length;i++){
-        t = t.split(replacements[i][0]).join(replacements[i][1]);
-      }
-      if(t !== node.textContent) node.textContent = t;
-    } else if(node.childNodes && node.childNodes.length){
-      node.childNodes.forEach(replaceInNode);
-    }
+  function fix(s){
+    if(typeof s!=='string') return s;
+    map.forEach(function(p){ s=s.split(p[0]).join(p[1]); });
+    return s;
   }
-  var obs = new MutationObserver(function(mutations){
-    mutations.forEach(function(m){
-      m.addedNodes.forEach(replaceInNode);
-      if(m.type==='characterData') replaceInNode(m.target);
-    });
+  // Patch createTextNode — React uses this for every text node
+  var orig=document.createTextNode.bind(document);
+  document.createTextNode=function(t){ return orig(fix(t)); };
+  // Patch textContent setter — covers direct assignments
+  var desc=Object.getOwnPropertyDescriptor(Node.prototype,'textContent');
+  Object.defineProperty(Node.prototype,'textContent',{
+    get:desc.get,
+    set:function(v){ desc.set.call(this,fix(v)); }
   });
-  obs.observe(document.documentElement,{childList:true,subtree:true,characterData:true});
-  document.addEventListener('DOMContentLoaded',function(){ replaceInNode(document.body); });
 })();
 </script></head>
 <body>
