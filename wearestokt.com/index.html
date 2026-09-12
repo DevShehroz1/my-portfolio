@@ -238,13 +238,17 @@
 </style><style>
 /* hide Weavy-Bria asterisk overlay */
 .framer-1jdl0ts { display: none !important; }
-/* show logo ticker (opacity:0 never animated without Framer runtime) */
-.framer-1ov3h3q-container section { opacity: 1 !important; -webkit-mask-image: none !important; mask-image: none !important; }
+/* show logo ticker */
+.framer-1ov3h3q-container section { opacity: 1 !important; }
+@keyframes tv-ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 /* hide hero text, keep CTAs */
 .framer-1vy08kh, .framer-s9jj5o, .framer-1gab8l9, .framer-jtmctl { display: none !important; }
-/* CTA: left side, vertically centered */
-.framer-14h0zn6 { justify-content: center !important; align-items: flex-start !important; }
-.framer-19crnii { align-items: flex-start !important; place-content: center flex-start !important; }
+/* CTA: hero full height + left side vertically centered */
+.framer-f2c3n0 { min-height: 100svh !important; }
+.framer-14h0zn6 { height: 100% !important; justify-content: center !important; align-items: flex-start !important; }
+.framer-1ul9fpz { height: 100% !important; display: flex !important; flex-flow: column !important; justify-content: center !important; align-items: flex-start !important; }
+.framer-1q9mo33 { display: flex !important; flex-flow: column !important; justify-content: center !important; align-items: flex-start !important; }
+.framer-19crnii { align-items: flex-start !important; justify-content: center !important; }
 </style></head>
 <body>
 	<script async src="../events.framer.com/script5e1f?v=2" data-fid="3bd476850f2219e5e1bae82f60cdd792086c8ddbbbb65993a5256405e554d657" data-no-nt></script>
@@ -460,7 +464,14 @@
 <!-- SnippetEnd: ebn9A888C -->
 
     <!-- End of bodyEnd -->
-</body>
+<script>
+(function(){
+  var ul = document.querySelector('.framer-1ov3h3q-container ul');
+  if (ul) { ul.style.animation = 'tv-ticker 30s linear infinite'; ul.style.transform = ''; }
+  var sect = document.querySelector('.framer-1ov3h3q-container section');
+  if (sect) { sect.style.opacity = '1'; }
+})();
+</script></body>
 
 <!-- Mirrored from wearestokt.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Aug 2026 08:36:54 GMT -->
 </html>
