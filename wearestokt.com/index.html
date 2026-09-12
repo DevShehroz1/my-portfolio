@@ -592,9 +592,16 @@
     document.querySelectorAll('.framer-text').forEach(function(el){
       if(el.children.length) return;
       var t = el.textContent;
-      if(t.includes('Creative Co') || t.includes('CREATIVE CO')){
-        var copy = t.includes('\u00a9') || t.includes('2026');
-        el.textContent = copy ? t.replace(/Tech Venchure Co/i,'Tech Venchure').replace(/TECH VENCHURE CO/i,'TECH VENCHURE').replace(/Stōkt Creative Co\.?/i,'Tech Venchure').replace(/STOKT CREATIVE CO\.?/i,'TECH VENCHURE') : 'Tech Venchure';
+      var hasCo = t.includes('Creative Co')||t.includes('CREATIVE CO')||t.includes('Venchure Co')||t.includes('VENCHURE CO');
+      if(hasCo){
+        var isCopy = t.includes('2026') || t.charCodeAt(0)===169;
+        if(isCopy){
+          var clean=t.replace(/[Ss]t[\u014d\u014c\u00f8o]kt\s+Creative\s+Co\.?/g,'Tech Venchure')
+                      .replace(/STOKT\s+CREATIVE\s+CO\.?/g,'TECH VENCHURE')
+                      .replace(/Tech Venchure\s+Co\.?/ig,'Tech Venchure')
+                      .replace(/TECH VENCHURE\s+CO\.?/g,'TECH VENCHURE');
+          el.textContent=clean;
+        } else { el.textContent='Tech Venchure'; }
       } else if(t.includes('Saint-Sauveur')) el.textContent='Jeddah - Saudi Arabia';
       else if(t.includes('hello@wearestokt')) el.textContent='info@techvenchure.com';
     });
