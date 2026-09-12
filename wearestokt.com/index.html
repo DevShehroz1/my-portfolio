@@ -12,8 +12,7 @@
     <meta name="description" content="Stokt is a creative studio crafting motion-led brand experiences, digital products, and award-winning websites for ambitious brands.">
     <meta name="framer-search-index" content="https://framerusercontent.com/sites/P5F56D6wexbFLHPqRWahu/searchIndex-d2OAmSzM1oyJ.json">
     <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/P5F56D6wexbFLHPqRWahu/searchIndex-TEniIZ7PJUY5.json">
-    <link href="https://framerusercontent.com/images/sYjTOcfCHLf3QOwoS3STDO3HCk.png" rel="icon" media="(prefers-color-scheme: light)">
-    <link href="https://framerusercontent.com/images/DkutYO3zgJIiZzEi127cF5ZMU.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link href="/assets/tv-favicon.png" rel="icon" type="image/png">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Stokt — Creative &amp; Motion Design Studio">
@@ -240,6 +239,14 @@
 .framer-1jdl0ts { display: none !important; }
 /* reduce nav height */
 .framer-aMTE3 .framer-18sb4tc { padding: 8px 16px !important; }
+/* footer text white */
+.framer-1cidskm{--extracted-r6o4lv:rgb(255,255,255)!important}
+.framer-1cidskm .framer-text{color:#fff!important}
+/* sphere right */
+.tvh-sphere-inner{justify-content:flex-end!important;padding-right:1em}
+/* gradient CTA */
+.tvh-btn-cta{background:linear-gradient(20deg,#ff2200,#ff8800)!important;border:none!important;box-shadow:0 7px 60px -10px rgba(255,80,0,.85)!important;border-radius:50em!important}
+.tvh-btn-cta:hover{background:linear-gradient(20deg,#ff4400,#ffaa00)!important;box-shadow:0 0 40px rgba(255,80,0,.6)!important}
 /* show logo ticker */
 .framer-1ov3h3q-container section { opacity: 1 !important; }
 @keyframes tv-ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
@@ -295,12 +302,12 @@
       <div class="tvh-content">
         <div class="tvh-grid">
           <div class="tvh-block">
-            <div class="tvh-eyebrow">[ WE ARE ST&#x14C;KT ]&nbsp;&rarr;</div>
-            <h1 class="tvh-heading">MOVING BRANDS<br>FORWARD</h1>
-            <p class="tvh-para">Stōkt builds motion-driven brand systems, unifying branding, web, and motion into a single evolving execution.</p>
+            <div class="tvh-eyebrow">[ TECH VENCHURE ]&nbsp;&rarr;</div>
+            <h1 class="tvh-heading">Experience<br>the Future</h1>
+            <p class="tvh-para">AI-Powered Marketing, Your Pathway to Success in the Digital Age. We build brands and accelerate startups in MENA.</p>
             <div class="tvh-ctas">
               <a href="index.html#portfolio" class="tvh-btn">VIEW PROJECTS &rarr;</a>
-              <a href="#svg9928795503" class="tvh-btn">GET A QUOTE &rarr;</a>
+              <a href="#svg9928795503" class="tvh-btn tvh-btn-cta">GET A QUOTE &rarr;</a>
             </div>
           </div>
           <div class="tvh-sphere-wrap">
@@ -574,13 +581,14 @@
   });
 })();
 (function(){
-  var obs = new MutationObserver(function(){
+  function patchName(){
     document.querySelectorAll('.framer-text').forEach(function(el){
-      var t = el.textContent.trim();
-      if(t === 'St\u014dkt Creative Co.') el.textContent = 'Tech Venchure';
+      if(!el.children.length&&el.textContent.includes('Creative Co')){el.textContent='Tech Venchure';}
     });
-  });
-  obs.observe(document.body, {childList:true, subtree:true});
+  }
+  [100,500,1500,3000].forEach(function(d){setTimeout(patchName,d);});
+  var obs=new MutationObserver(patchName);
+  obs.observe(document.body,{childList:true,characterData:true,subtree:true});
 })();
 </script></body>
 
