@@ -218,7 +218,7 @@
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SZ3QMJCT75"></script>
-<script type="module" async data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/P5F56D6wexbFLHPqRWahu/script_main.k28U6ZFM.mjs"></script><style>
+<script type="module" async data-framer-bundle="main" fetchpriority="low" src="/assets/script_main.mjs"></script><style>
 .framer-w31gpz img { opacity: 0 !important; }
 .framer-w31gpz {
   overflow: visible !important;
@@ -235,29 +235,7 @@
   background: url('/assets/techvenchure-logo.png') left center / contain no-repeat;
   z-index: 10;
 }
-</style><script>
-(function(){
-  var map = [
-    ['Stōkt Creative Co.','TECH VENCHURE CO'],
-    ['Stōkt Creative','TECH VENCHURE CO'],
-    ['( WE ARE STŌKT )','TECH VENCHURE CO']
-  ];
-  function fix(s){
-    if(typeof s!=='string') return s;
-    map.forEach(function(p){ s=s.split(p[0]).join(p[1]); });
-    return s;
-  }
-  // Patch createTextNode — React uses this for every text node
-  var orig=document.createTextNode.bind(document);
-  document.createTextNode=function(t){ return orig(fix(t)); };
-  // Patch textContent setter — covers direct assignments
-  var desc=Object.getOwnPropertyDescriptor(Node.prototype,'textContent');
-  Object.defineProperty(Node.prototype,'textContent',{
-    get:desc.get,
-    set:function(v){ desc.set.call(this,fix(v)); }
-  });
-})();
-</script></head>
+</style></head>
 <body>
 	<script async src="../events.framer.com/script5e1f?v=2" data-fid="3bd476850f2219e5e1bae82f60cdd792086c8ddbbbb65993a5256405e554d657" data-no-nt></script>
 	<!-- Start of bodyStart -->
