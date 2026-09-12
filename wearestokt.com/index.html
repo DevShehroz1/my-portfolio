@@ -243,7 +243,9 @@
 .framer-aMTE3 .framer-18sb4tc { padding: 8px 16px !important; }
 /* footer text white */
 .framer-1cidskm{--extracted-r6o4lv:rgb(255,255,255)!important}
-.framer-1cidskm .framer-text{color:#fff!important}
+.framer-1cidskm .framer-text,.framer-1cidskm a,.framer-1cidskm span,.framer-1cidskm p{color:#fff!important}
+.framer-jeh5nv img{display:none!important}
+.tv-footer-name{font-family:"PP Neue Montreal Regular","PP Neue Montreal Regular Placeholder",sans-serif;font-size:2em;font-weight:500;color:#fff;margin:0;line-height:1.2}
 /* sphere right */
 .tvh-sphere-wrap{transform:translateX(55%)}
 .tvh-sphere-inner{left:0!important;right:0!important;justify-content:center!important}
@@ -586,22 +588,26 @@
 (function(){
   var TITLE = 'Tech Venchure — AI-Powered Marketing & Brand Growth';
   function patch(){
-    // title
     if(document.title !== TITLE) document.title = TITLE;
-    // text nodes
     document.querySelectorAll('.framer-text').forEach(function(el){
       if(el.children.length) return;
       var t = el.textContent;
-      if(t.includes('Creative Co')) el.textContent = 'Tech Venchure';
-      else if(t.includes('Saint-Sauveur')) el.textContent = 'Jeddah - Saudi Arabia';
-      else if(t.includes('hello@wearestokt')) el.textContent = 'info@techvenchure.com';
+      if(t.includes('Creative Co') || t.includes('CREATIVE CO')){
+        var copy = t.includes('\u00a9') || t.includes('2026');
+        el.textContent = copy ? t.replace(/Tech Venchure Co/i,'Tech Venchure').replace(/TECH VENCHURE CO/i,'TECH VENCHURE').replace(/Stōkt Creative Co\.?/i,'Tech Venchure').replace(/STOKT CREATIVE CO\.?/i,'TECH VENCHURE') : 'Tech Venchure';
+      } else if(t.includes('Saint-Sauveur')) el.textContent='Jeddah - Saudi Arabia';
+      else if(t.includes('hello@wearestokt')) el.textContent='info@techvenchure.com';
     });
-    // video
+    var wrap=document.querySelector('.framer-jeh5nv');
+    if(wrap&&!wrap.querySelector('.tv-footer-name')){
+      var p=document.createElement('p');p.className='tv-footer-name';p.textContent='Tech Venchure';
+      wrap.insertBefore(p,wrap.firstChild);
+    }
     document.querySelectorAll('video').forEach(function(v){
-      if(!v.src || !v.src.includes('golf-ball')){
+      if(!v.src||!v.src.includes('golf-ball')){
         v.setAttribute('src','/assets/golf-ball.mp4');
-        v.muted=true; v.loop=true; v.autoplay=true; v.setAttribute('playsinline','');
-        v.load(); v.play().catch(function(){});
+        v.muted=true;v.loop=true;v.autoplay=true;v.setAttribute('playsinline','');
+        v.load();v.play().catch(function(){});
       }
     });
   }
