@@ -237,8 +237,10 @@
 </style><style>
 /* hide preloader */
 .framer-sdn7wt { display: none !important; }
-/* hide main until patched to prevent flash */
-#main { opacity: 0; transition: opacity 0.25s ease; }
+/* hide services & about us sections */
+.framer-17xv4h8, .framer-19515zx { display: none !important; }
+/* keep #main invisible until patches confirm - !important so framer inline styles cant win */
+#main { opacity: 0 !important; }
 /* hide Weavy-Bria asterisk overlay */
 .framer-1jdl0ts { display: none !important; }
 /* reduce nav height */
@@ -622,11 +624,16 @@
   // title lock via MutationObserver on <title>
   var tEl = document.querySelector('title');
   if(tEl){ new MutationObserver(function(){ if(document.title!==TITLE) document.title=TITLE; }).observe(tEl,{childList:true,characterData:true,subtree:true}); }
-  [100,500,1000,2000,4000].forEach(function(d){
-    setTimeout(function(){ patch(); if(d>=500){ var m=document.getElementById('main'); if(m) m.style.opacity='1'; } },d);
-  });
+  function revealMain(){
+    var s=document.createElement('style');s.id='main-show';
+    s.textContent='#main{opacity:1!important;transition:opacity 0.3s ease}';
+    if(!document.getElementById('main-show')) document.head.appendChild(s);
+  }
+  [100,500,1000].forEach(function(d){setTimeout(patch,d);});
+  setTimeout(function(){patch();revealMain();},2000);
+  setTimeout(function(){patch();},4000);
   var obs=new MutationObserver(patch);
-  obs.observe(document.body,{childList:true,subtree:true});
+  obs.observe(document.body,{childList:true,subtree:true,characterData:true});
 })();
 </script></body>
 
