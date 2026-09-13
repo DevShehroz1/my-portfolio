@@ -239,8 +239,6 @@
 .framer-sdn7wt { display: none !important; }
 /* hide services & about us sections */
 .framer-17xv4h8, .framer-19515zx { display: none !important; }
-/* keep #main invisible until patches confirm - !important so framer inline styles cant win */
-#main { opacity: 0 !important; }
 /* hide Weavy-Bria asterisk overlay */
 .framer-1jdl0ts { display: none !important; }
 /* reduce nav height */
@@ -634,6 +632,20 @@
   setTimeout(function(){patch();},4000);
   var obs=new MutationObserver(patch);
   obs.observe(document.body,{childList:true,subtree:true,characterData:true});
+})();
+</script><script>
+(function(){
+  function killPreloader(){
+    document.querySelectorAll('.framer-sdn7wt,[data-framer-name*="preloader"]').forEach(function(el){
+      el.style.setProperty('display','none','important');
+      el.style.setProperty('visibility','hidden','important');
+      el.style.setProperty('opacity','0','important');
+      el.style.setProperty('pointer-events','none','important');
+    });
+  }
+  killPreloader();
+  var obs=new MutationObserver(killPreloader);
+  obs.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['style','class']});
 })();
 </script></body>
 
