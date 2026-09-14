@@ -860,21 +860,15 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,[data-fra
 })();
 </script><script>
 (function(){
-  function killPreloader(){
-    document.querySelectorAll('.framer-sdn7wt,[data-framer-name*="preloader"],[data-framer-name*="Preloader"]').forEach(function(el){
-      el.style.setProperty('display','none','important');
-      el.style.setProperty('visibility','hidden','important');
-      el.style.setProperty('opacity','0','important');
-      el.style.setProperty('pointer-events','none','important');
-    });
+  var SEL='.framer-sdn7wt,[data-framer-name*="Preloader"],[data-framer-name*="preloader"]';
+  var deadline=Date.now()+3000;
+  function tick(){
+    document.querySelectorAll(SEL).forEach(function(el){el.remove();});
     var fv=document.getElementById('uVrHyXKh9');
-    if(fv&&fv.getAttribute('src')&&!fv.getAttribute('src').includes('golf-ball')){
-      fv.setAttribute('src','/assets/golf-ball.mp4');
-    }
+    if(fv&&fv.src&&!fv.src.includes('golf-ball'))fv.src='/assets/golf-ball.mp4';
+    if(Date.now()<deadline)requestAnimationFrame(tick);
   }
-  killPreloader();
-  var obs=new MutationObserver(killPreloader);
-  obs.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['style','class','src']});
+  requestAnimationFrame(tick);
 })();
 </script></body>
 
