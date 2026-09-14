@@ -861,14 +861,12 @@ NavigationContainer [data-framer-component-type=NavigationContainer]>*,[data-fra
 </script><script>
 (function(){
   var SEL='.framer-sdn7wt,[data-framer-name*="Preloader"],[data-framer-name*="preloader"]';
-  var deadline=Date.now()+3000;
-  function tick(){
+  function kill(){
     document.querySelectorAll(SEL).forEach(function(el){el.remove();});
     var fv=document.getElementById('uVrHyXKh9');
     if(fv&&fv.src&&!fv.src.includes('golf-ball'))fv.src='/assets/golf-ball.mp4';
-    if(Date.now()<deadline)requestAnimationFrame(tick);
   }
-  requestAnimationFrame(tick);
+  [0,200,600,1500].forEach(function(t){setTimeout(kill,t);});
 })();
 </script></body>
 
